@@ -1,116 +1,61 @@
 # Minha mão verde com OpenCV
 
-Projeto introdutório que abre a webcam e desenha os pontos e as linhas verdes
-de até duas mãos. Todo o código está em `main.py`; não existe `rastreador.py`
-nem modelo separado.
+O programa abre a webcam e desenha pontos e linhas verdes sobre até duas mãos.
+Todo o código da atividade fica em um único arquivo chamado `main.py`.
 
-## Antes de começar
+## O que o aluno faz
 
-Este repositório usa somente um ambiente virtual:
+O computador deve estar preparado antes da aula. Durante a atividade, o aluno
+faz somente isto:
 
-```text
-D:\GitHub\CtrlPlayAlunos\.venv
-```
+1. Abre o VS Code.
+2. Cria uma pasta para o projeto.
+3. Cria um arquivo chamado `main.py`.
+4. Digita o código com o professor.
+5. Clica no botão triangular **Executar arquivo Python**.
 
-Não crie `.venv` dentro das pastas das aulas.
+Não é necessário criar `.venv`, usar `pip`, instalar bibliotecas ou criar
+`requirements.txt` durante a aula.
 
-Quando `(.venv)` aparece no início do terminal, o ambiente está ativo:
+Para encerrar, clique na janela da webcam e pressione `Q`.
 
-```text
-(.venv) PS D:\GitHub\CtrlPlayAlunos>
-```
+## Preparação do professor — uma única vez
 
-Para sair do ambiente virtual:
+Esta etapa deve ser feita antes da aula, sem a participação dos alunos.
 
-```powershell
-deactivate
-```
-
-Fechar o PowerShell também encerra a ativação. Isso não apaga o ambiente.
-
-## Primeira configuração
-
-Estes comandos são executados apenas uma vez em cada computador.
-
-### 1. Confirmar o Python 3.11
-
-```powershell
-py -3.11 --version
-```
-
-Se a versão não estiver instalada:
+### 1. Instalar o Python 3.11
 
 ```powershell
 winget install --id Python.Python.3.11 --exact
 ```
 
-Depois, feche e abra o PowerShell.
+Feche e abra o PowerShell depois da instalação.
 
-### 2. Criar o único ambiente virtual
-
-```powershell
-cd D:\GitHub\CtrlPlayAlunos
-py -3.11 -m venv .venv
-```
-
-Se a pasta `.venv` já existir, não execute o segundo comando novamente.
-
-### 3. Ativar e instalar
+### 2. Instalar o MediaPipe
 
 ```powershell
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r .\primeira-webcam-opencv\requirements.txt
+py -3.11 -m pip install --user mediapipe==0.10.21
 ```
 
-## Rodar o projeto
+O MediaPipe instala também o OpenCV usado pelo projeto.
+
+### 3. Configurar o VS Code
+
+1. Pressione `Ctrl + Shift + P`.
+2. Procure por **Python: Select Interpreter**.
+3. Selecione **Python 3.11.9**.
+
+Essa escolha fica salva no computador. Os alunos não precisam repeti-la.
+
+## Teste do professor
+
+Antes da aula, abra o terminal na pasta do projeto e execute:
 
 ```powershell
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-python .\primeira-webcam-opencv\main.py
+py -3.11 main.py
 ```
 
-Mostre as mãos abertas para a câmera. Pressione `Q` com a janela selecionada
-para encerrar. Depois, use `deactivate` para sair do ambiente virtual.
-
-## Uso nas próximas aulas
-
-Depois da primeira configuração, use somente:
-
-```powershell
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-python .\primeira-webcam-opencv\main.py
-```
-
-## Problemas comuns
-
-### O terminal mostra outro ambiente virtual
-
-```powershell
-deactivate
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-```
-
-### `No module named 'cv2'` ou `No module named 'mediapipe'`
-
-```powershell
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r .\primeira-webcam-opencv\requirements.txt
-```
-
-### A webcam não abre
-
-- Feche Meet, Teams, Discord e outros programas que utilizam a câmera.
-- Confira as permissões de câmera do Windows.
-- Se houver outra câmera, troque `VideoCapture(0)` por `VideoCapture(1)`.
-
-### `Q` não encerra
-
-Clique na janela da câmera e pressione `Q` novamente.
+Se a webcam abrir e as linhas verdes aparecerem, o computador está pronto.
 
 ## O que explicar na aula
 
@@ -123,4 +68,20 @@ Clique na janela da câmera e pressione `Q` novamente.
 - `imshow()` mostra o resultado.
 
 As linhas do MediaPipe podem ser apresentadas como uma ferramenta pronta. O
-foco da aula continua sendo abrir, modificar e mostrar imagens com OpenCV.
+foco da aula é abrir, modificar e mostrar imagens com OpenCV.
+
+## Problemas comuns
+
+### O VS Code mostra que `cv2` ou `mediapipe` não existe
+
+Confira se o interpretador selecionado no VS Code é o **Python 3.11.9**.
+
+### A webcam não abre
+
+- Feche Meet, Teams, Discord e outros programas que estejam usando a câmera.
+- Confira as permissões de câmera do Windows.
+- Se houver outra câmera, troque `VideoCapture(0)` por `VideoCapture(1)`.
+
+### A tecla `Q` não encerra
+
+Clique primeiro na janela da webcam e pressione `Q` novamente.

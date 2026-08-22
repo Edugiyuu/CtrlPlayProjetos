@@ -1,31 +1,39 @@
 # CtrlPlay Alunos
 
-Cada pasta na raiz representa um projeto/aula independente:
+Cada pasta representa um projeto independente para as aulas:
 
 ```text
 CtrlPlayAlunos/
-├── .venv/                       # Ambiente compartilhado
-├── primeira-webcam-opencv/      # Aula da mão verde
-└── teclado-virtual-opencv/      # Aula do teclado virtual
+├── primeira-webcam-opencv/
+├── projeto-quiz-dom/
+└── teclado-virtual-opencv/
 ```
 
-## Aulas
+## Para os alunos
 
-- [Primeira webcam com OpenCV](./primeira-webcam-opencv/README.md)
+Os computadores já devem estar preparados pelo professor. O aluno apenas:
+
+1. Cria ou abre a pasta da atividade no VS Code.
+2. Cria o arquivo `main.py`.
+3. Digita o código da aula.
+4. Clica no botão de executar do VS Code.
+
+Não é necessário criar ambiente virtual, ativar `.venv`, usar `pip` ou criar
+`requirements.txt` durante a aula.
+
+## Preparação do professor
+
+Execute uma única vez em cada computador, antes da aula:
+
+```powershell
+winget install --id Python.Python.3.11 --exact
+py -3.11 -m pip install --user mediapipe==0.10.21 PyAutoGUI
+```
+
+No VS Code, selecione **Python 3.11** como interpretador. Depois disso, os
+alunos podem usar apenas o botão de executar.
+
+## Projetos
+
+- [Mão verde com OpenCV](./primeira-webcam-opencv/README.md)
 - [Teclado virtual com OpenCV](./teclado-virtual-opencv/README.md)
-
-O ambiente `.venv` fica somente na raiz e é usado por todas as aulas. Não crie
-outros ambientes dentro das pastas de aula.
-
-Para ativá-lo:
-
-```powershell
-cd D:\GitHub\CtrlPlayAlunos
-.\.venv\Scripts\Activate.ps1
-```
-
-Para sair:
-
-```powershell
-deactivate
-```
