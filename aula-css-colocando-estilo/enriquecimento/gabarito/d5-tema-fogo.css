@@ -1,0 +1,131 @@
+/* GABARITO D5 — 2º tema: FOGO.
+   Só a seção CORES mudou + os valores de borda na ESTRUTURA
+   (#2f4a6b -> #7a2e1a  e  #7cc4ff -> #ff7a3d). Resto igual ao d5-acumulado. */
+
+/* ============ CORES DO TEMA ============ */
+body {
+  background-color: #1a0d0a;
+  color: #ffe8d6;
+}
+
+h1,
+h2,
+th {
+  color: #ff7a3d;
+}
+
+.lema,
+.rodape {
+  color: #d99873;
+}
+
+.bloco {
+  background-color: #24120e;
+}
+
+.tag-facil {
+  background-color: #1f3d16;
+  color: #a8e6a0;
+}
+
+.tag-media {
+  background-color: #4a3a12;
+  color: #ffe07a;
+}
+
+.tag-dificil {
+  background-color: #4a1616;
+  color: #ff9b9b;
+}
+
+.destaque {
+  background-color: #3a1a12;
+}
+
+/* ============ ESTRUTURA (igual em todos os temas) ============ */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 24px;
+}
+
+.topo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 4px;
+}
+
+.lema {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.bloco {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  border: 1px solid #7a2e1a;
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #7a2e1a;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+.missoes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.missao {
+  border: 1px solid #7a2e1a;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+.titulo-missao {
+  font-weight: bold;
+}
+
+.tag {
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.tabela {
+  border: 1px solid #7a2e1a;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #7a2e1a;
+  padding: 8px 14px;
+  text-align: left;
+}
+
+.destaque {
+  border-left: 4px solid #ff7a3d;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.rodape {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 24px;
+}

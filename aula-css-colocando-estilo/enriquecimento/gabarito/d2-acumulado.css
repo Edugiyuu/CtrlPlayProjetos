@@ -1,0 +1,55 @@
+/* GABARITO — estilo.css esperado ao FIM do desafio D2 (D1 + blocos) */
+
+/* --- base da página --- */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #0d1b2a;
+  color: #e6f0fa;
+  line-height: 1.6;
+  margin: 0;
+  padding: 24px;
+}
+
+/* --- cabeçalho --- */
+.topo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #7cc4ff;
+  font-size: 38px;
+  margin-bottom: 4px;
+}
+
+.lema {
+  color: #9fb8d0;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* --- blocos --- */
+.bloco {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  background-color: #14263b;
+  border: 1px solid #2f4a6b;
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+h2 {
+  color: #7cc4ff;
+  font-size: 20px;
+  border-bottom: 1px solid #2f4a6b;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+/* --- rodapé --- */
+.rodape {
+  text-align: center;
+  color: #9fb8d0;
+  font-size: 13px;
+  margin-top: 24px;
+}

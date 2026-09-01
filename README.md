@@ -37,3 +37,12 @@ alunos podem usar apenas o botão de executar.
 
 - [Mão verde com OpenCV](./primeira-webcam-opencv/README.md)
 - [Teclado virtual com OpenCV](./teclado-virtual-opencv/README.md)
+- [Quiz interativo com DOM](./projeto-quiz-dom/ROTEIRO-AULA.md)
+- [Ficha de Herói — Colocando estilo (CSS)](./aula-css-colocando-estilo/README.md)
+- [Central de Heróis com React + Vite](./aula-react-vite/README.md)
+
+## Aulas
+
+O fluxo para planejar, dar e registrar aulas está em
+[alunos/WORKFLOW-AULAS.md](./alunos/WORKFLOW-AULAS.md). O progresso de cada turma
+fica em `alunos/progresso/turma-<id>.md`.
