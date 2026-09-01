@@ -1,0 +1,13 @@
+{
+  "name": "crud-cartas-pokemon",
+  "version": "1.0.0",
+  "description": "CRUD simples de cartas Pokemon com HTML, JavaScript e Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

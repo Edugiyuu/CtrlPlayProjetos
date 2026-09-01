@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD de Cartas Pokemon</title>
+</head>
+<body>
+  <h1>CRUD de Cartas Pokemon</h1>
+
+  <h2>Cadastrar carta</h2>
+  <form id="form-criar">
+    <label>
+      Nome:
+      <input id="nome" type="text" required>
+    </label>
+    <br>
+    <label>
+      Tipo:
+      <input id="tipo" type="text" required>
+    </label>
+    <br>
+    <label>
+      HP:
+      <input id="hp" type="number" required>
+    </label>
+    <br>
+    <button type="submit">Criar carta</button>
+  </form>
+
+  <h2>Editar carta</h2>
+  <form id="form-editar">
+    <label>
+      ID:
+      <input id="editar-id" type="number" required>
+    </label>
+    <br>
+    <label>
+      Novo nome:
+      <input id="editar-nome" type="text">
+    </label>
+    <br>
+    <label>
+      Novo tipo:
+      <input id="editar-tipo" type="text">
+    </label>
+    <br>
+    <label>
+      Novo HP:
+      <input id="editar-hp" type="number">
+    </label>
+    <br>
+    <button type="submit">Atualizar carta</button>
+  </form>
+
+  <h2>Excluir carta</h2>
+  <form id="form-excluir">
+    <label>
+      ID:
+      <input id="excluir-id" type="number" required>
+    </label>
+    <button type="submit">Excluir carta</button>
+  </form>
+
+  <h2>Cartas cadastradas</h2>
+  <button id="botao-carregar">Carregar cartas</button>
+  <ul id="lista-cartas"></ul>
+
+  <p id="mensagem"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
