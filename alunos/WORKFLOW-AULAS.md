@@ -9,13 +9,45 @@ CtrlPlayAlunos/
 ├── alunos/
 │   ├── progresso/                 # 1 arquivo por turma (turma-<id>.md)
 │   ├── progresso-turma-template.md
+│   ├── AULA-PASSO-A-PASSO-template.md  # modelo opcional do arquivo do aluno
 │   └── WORKFLOW-AULAS.md          # este arquivo
 ├── <projeto-da-aula>/             # 1 pasta por projeto/aula
 │   ├── README.md                  # o que o aluno pratica + como rodar
-│   └── ROTEIRO-AULA.md            # roteiro minuto a minuto
+│   ├── ROTEIRO-AULA.md            # SEU: roteiro minuto a minuto, perguntas, rubrica
+│   └── AULA-PASSO-A-PASSO.md      # OPCIONAL: só quando o aluno vai fazer sozinho
 ```
 
 Regra: **um projeto por pasta**, sempre com `README.md` e `ROTEIRO-AULA.md`.
+
+O `AULA-PASSO-A-PASSO.md` é **opcional**. Só crie quando o aluno vai executar
+sozinho (sem você conduzindo) — aula assíncrona, tarefa de casa, aluno adiantado.
+Numa aula que você dá ao vivo, o `ROTEIRO-AULA.md` já basta. Quando fizer, use
+[`alunos/AULA-PASSO-A-PASSO-template.md`](AULA-PASSO-A-PASSO-template.md).
+
+## Adaptar a aula ao aluno (leia antes de escrever qualquer material)
+
+O material tem que caber **no aluno**, não no tema. Referência: a aula de React
+do Miguel (turma #11904) foi escrita para 2h e ele fez ~1/4 — instalou o Vite e
+criou componentes com props, só. O material estava certo, mas grande demais.
+
+- **O aluno escreve o código do ZERO.** Na maioria das aulas não se entrega
+  nada pronto. Material do aluno diz *o que* fazer, *qual* recurso usar e *o
+  que* testar — o aluno monta a linha. Código pronto só no gabarito/pasta de
+  referência, que é sua. Exceção: comandos de terminal e boilerplate que não
+  dá pra deduzir (ex.: `npm create vite@latest ...`).
+- **Pré-requisito real, sem otimismo.** "Já viu JS" não é "manda bem em JS".
+  Na dúvida, assuma o nível mais baixo.
+- **Estime o escopo e corte pela metade.** Sobrar aula é bom; parar no meio de
+  um passo, não.
+- **Defina um MARCO MÍNIMO**: o menor resultado que já conta como aula cumprida.
+  Todo o resto entra numa seção "Se sobrar tempo".
+- **Ponto de parada no meio** do roteiro para medir o ritmo e decidir entre
+  seguir ou consolidar o que já foi feito.
+- **Se houver arquivo do aluno**, ele é do aluno: `AULA-PASSO-A-PASSO.md` só
+  fala "você" — nada de turma, sessões, rubrica ou "registrar progresso". Isso
+  tudo fica no `ROTEIRO-AULA.md`.
+- Depois da aula, anote em Observações **até onde o aluno chegou de verdade** e
+  ajuste o escopo da próxima.
 
 ## Ciclo de uma aula
 
@@ -26,6 +58,8 @@ Regra: **um projeto por pasta**, sempre com `README.md` e `ROTEIRO-AULA.md`.
 2. Criar a pasta do projeto: `nome-curto-descritivo/`.
 3. Escrever o `ROTEIRO-AULA.md` a partir do modelo abaixo.
 4. Escrever o `README.md` (objetivo, o que pratica, como rodar).
+   Se — e só se — o aluno vai fazer sozinho, escrever também o
+   `AULA-PASSO-A-PASSO.md` a partir de `alunos/AULA-PASSO-A-PASSO-template.md`.
 5. Montar a versão pronta do projeto (código de referência do professor).
 6. Testar do zero: apagar `node_modules`, instalar e rodar como o aluno faria.
 7. Anotar no cronograma a data e marcar a aula como `🟡 Em andamento`.
@@ -60,6 +94,9 @@ No arquivo da turma:
 - [ ] Pasta do projeto criada
 - [ ] `ROTEIRO-AULA.md` com blocos de tempo somando a duração da aula
 - [ ] `README.md` com "o que o aluno pratica" e "como rodar"
+- [ ] `AULA-PASSO-A-PASSO.md` **só se** o aluno vai fazer sozinho — nesse caso
+      só "você", com MARCO MÍNIMO e ponto de parada
+- [ ] Escopo estimado e cortado pela metade
 - [ ] Código de referência funcionando
 - [ ] 3–5 desafios extras para quem terminar antes
 - [ ] Lista de erros comuns
