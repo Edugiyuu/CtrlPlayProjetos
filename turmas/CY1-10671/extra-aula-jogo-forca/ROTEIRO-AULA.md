@@ -2,7 +2,7 @@
 
 ## Dados
 - Turma alvo: #10671 (aula extra, fora da numeração oficial — entre a #5 e a #6)
-- Projeto: `aula-jogo-forca`
+- Projeto: `extra-aula-jogo-forca`
 - Duração: ~1h
 - Pré-requisito do aluno: aulas 1–5 já feitas (textos, listas, condicionais,
   repetição). Não pressupõe dicionário/tupla/set (isso é a aula #6, ainda

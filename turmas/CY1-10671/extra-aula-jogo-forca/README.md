@@ -26,7 +26,7 @@ python forca.py
 ## Estrutura da pasta
 
 ```text
-aula-jogo-forca/
+extra-aula-jogo-forca/
 ├── README.md          <- este arquivo
 ├── desafio-forca.md    <- o desafio: O QUE FAZER, passo a passo
 ├── ROTEIRO-AULA.md      <- roteiro do professor (não é pra você)

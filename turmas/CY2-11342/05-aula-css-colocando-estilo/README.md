@@ -28,7 +28,7 @@ Ao editar `style.css`, salve e recarregue a página (F5).
 ## Arquivos
 
 ```text
-aula-css-colocando-estilo/
+05-aula-css-colocando-estilo/
 ├── index.html    # página pronta em HTML (o aluno NÃO precisa mexer)
 ├── style.css     # CSS de referência (resultado final)
 ├── ROTEIRO-AULA.md        # visão do professor (blocos de tempo, escopo)

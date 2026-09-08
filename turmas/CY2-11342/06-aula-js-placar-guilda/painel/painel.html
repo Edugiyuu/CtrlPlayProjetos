@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel da Guilda</title>
+    <!-- NÃO mexa neste HTML nem no estilo.css.
+         Nesta aula o VISUAL já está pronto (é o painel da aula #5).
+         O que falta é o COMPORTAMENTO: os botões e os campos abaixo já
+         estão na página, mas "mortos". É o seu placar.js que faz cada
+         um funcionar. Você mexe SÓ no placar.js. -->
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1>Guilda dos Aventureiros</h1>
+      <p class="lema">Coragem, código e cooperação</p>
+    </header>
+
+    <main class="conteudo">
+      <section class="bloco" id="mural">
+        <h2>Mural de missões</h2>
+        <ul class="missoes">
+          <li class="missao">
+            <span class="titulo-missao">Escoltar a caravana</span>
+            <span class="tag tag-facil">Fácil</span>
+          </li>
+          <li class="missao">
+            <span class="titulo-missao">Explorar a caverna de gelo</span>
+            <span class="tag tag-media">Média</span>
+          </li>
+          <li class="missao">
+            <span class="titulo-missao">Derrotar o dragão ancião</span>
+            <span class="tag tag-dificil">Difícil</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bloco" id="ranking">
+        <h2>Ranking de heróis</h2>
+        <table class="tabela">
+          <thead>
+            <tr><th>Posição</th><th>Herói</th><th>Pontos</th><th>Ação</th></tr>
+          </thead>
+          <tbody id="corpo-ranking">
+            <tr>
+              <td class="posicao">1</td>
+              <td class="nome">Aurora</td>
+              <td class="pontos" id="pontos-aurora">980</td>
+              <td>
+                <button class="btn-mais" id="btn-aurora" type="button">+10</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="posicao">2</td>
+              <td class="nome">Brakus</td>
+              <td class="pontos">915</td>
+              <td>
+                <button class="btn-mais" type="button">+10</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="posicao">3</td>
+              <td class="nome">Célia</td>
+              <td class="pontos">870</td>
+              <td>
+                <button class="btn-mais" type="button">+10</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="controles">
+          <div class="controle">
+            <label for="qtd-pontos">Somar</label>
+            <input type="number" id="qtd-pontos" value="50" />
+            <label for="heroi-alvo">pontos a</label>
+            <select id="heroi-alvo">
+              <option value="Aurora">Aurora</option>
+              <option value="Brakus">Brakus</option>
+              <option value="Célia">Célia</option>
+            </select>
+            <button id="btn-somar" type="button">Somar pontos</button>
+          </div>
+
+          <div class="controle">
+            <label for="novo-nome">Recrutar</label>
+            <input type="text" id="novo-nome" placeholder="nome do herói" />
+            <button id="btn-recrutar" type="button">Novo herói</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloco" id="aviso">
+        <h2>Aviso da mestra da guilda</h2>
+        <p class="destaque">
+          A reunião mensal foi <strong>adiada</strong> para a próxima lua cheia.
+        </p>
+        <p>
+          Novos membros devem procurar a escriba Lía para registrar seus feitos
+          no grande livro da guilda.
+        </p>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Painel da Guilda · turma #11342 · placar com JavaScript</p>
+    </footer>
+
+    <!-- O JavaScript entra no FIM do body: assim a página já existe
+         quando o script roda e o querySelector consegue achar tudo. -->
+    <script src="placar.js"></script>
+  </body>
+</html>

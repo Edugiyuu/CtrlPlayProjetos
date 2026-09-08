@@ -25,20 +25,31 @@ banco relacional e não relacional — e escrever sozinhos um `SELECT` com
 
 ---
 
-## 0–15 min — Parte 0: Relacional vs. Não Relacional (conceito, sem código)
+## 0–20 min — Parte 0: SQL vs. NoSQL, e as duas chaves (conceito, sem código)
 
 Conduza com perguntas, usando o que eles já sabem de Mongo como ponto de partida.
+**Pare em cada bloco e peça para alguém repetir com as próprias palavras antes
+de seguir** — foi o ponto que passou rápido demais na primeira turma.
 
-**Banco relacional (SQL):**
+### O que é "SQL" e o que é "NoSQL"
+- **SQL** (*Structured Query Language*) é, ao mesmo tempo, (a) a linguagem que
+  usamos para conversar com um banco de dados relacional e (b) o apelido que
+  se dá para "banco relacional" (ex.: "esse projeto usa SQL" = usa um banco
+  relacional). Hoje escrevemos SQL de verdade no Beekeeper.
+- **NoSQL** literalmente significa "not only SQL" — é o nome genérico para
+  **qualquer** banco que não organiza os dados em tabelas com schema fixo.
+  MongoDB (documentos) é o mais comum, mas também existem NoSQL de
+  chave-valor (Redis), de coluna (Cassandra) etc. **A turma já usa um NoSQL
+  todo dia sem saber: o MongoDB do projeto da biblioteca.**
+
+### Banco relacional (SQL) — tabelas
 - Dados ficam em **tabelas**: linhas (registros) e colunas (campos fixos).
 - Toda linha da tabela `livros` tem exatamente as mesmas colunas.
-- Relação entre tabelas via **chave estrangeira** (ex.: `livros.autor_id`
-  aponta para `autores.id`) — em vez de repetir o autor inteiro em cada livro.
 - Schema é definido antes (`CREATE TABLE`) e é rígido: não dá para inserir
   uma linha faltando uma coluna obrigatória.
 - Exemplos: PostgreSQL, MySQL, SQLite, SQL Server.
 
-**Banco não relacional (NoSQL / documentos, ex. MongoDB):**
+### Banco não relacional (NoSQL / documentos, ex. MongoDB)
 - Dados ficam em **documentos** (parecido com um objeto JS/JSON), agrupados
   em **coleções**.
 - Cada documento pode ter campos diferentes — schema flexível.
@@ -64,9 +75,44 @@ coleção separada?"* Deixe eles pensarem antes de responder — não tem respos
 > a ganhar. Dado que muda de formato ou precisa escalar rápido e horizontal →
 > não relacional tende a ganhar. Muita empresa usa os dois ao mesmo tempo.
 
+### Chave primária (Primary Key) — explicar ANTES de abrir o Beekeeper
+- É a coluna que identifica **uma linha, e só uma**, dentro da tabela — nunca
+  se repete, nunca fica vazia.
+- No nosso banco: `autores.id`, `livros.id`, `alunos.id`. Cada `id` só existe
+  uma vez na tabela dele.
+- Analogia: é como o CPF de uma pessoa — identifica ela sem ambiguidade,
+  mesmo que duas pessoas tenham o mesmo nome.
+
+### Chave estrangeira (Foreign Key) — explicar ANTES de abrir o Beekeeper
+- É uma coluna numa tabela que **guarda o valor da chave primária de outra
+  tabela**, criando o link entre as duas.
+- No nosso banco: `livros.autor_id` guarda o `id` de um autor que existe na
+  tabela `autores`. Por isso dá para achar o autor de um livro sem repetir o
+  nome dele em toda linha da tabela `livros`.
+- **Desenhe isso no quadro/tela antes de sair digitando SQL:**
+  ```
+  autores                      livros
+  ┌────┬───────────────┐       ┌────┬──────────────┬──────────┐
+  │ id │ nome          │       │ id │ titulo       │ autor_id │
+  ├────┼───────────────┤       ├────┼──────────────┼──────────┤
+  │ 1  │ J.K. Rowling  │ <───┐ │ 1  │ Harry Potter │    1     │
+  │ 2  │ Tolkien       │ <─┐ └─│ 2  │ H.P. e a...  │    1     │
+  └────┴───────────────┘   └───│ 3  │ O Hobbit     │    2     │
+     chave primária             └────┴──────────────┴──────────┘
+                                        chave estrangeira
+  ```
+  A seta é o que o `JOIN` faz na hora da consulta: ele segue o `autor_id` até
+  achar a linha certa em `autores`.
+
+**Teste de entendimento antes de seguir (pergunte, não explique de novo):**
+*"Se eu tentasse cadastrar um livro com `autor_id = 99`, e não existe autor
+com `id = 99`, o que vocês acham que acontece?"* (Resposta: o banco recusa —
+é exatamente para isso que a chave estrangeira serve, garantir que a relação
+sempre aponte para algo que existe de verdade.)
+
 ---
 
-## 15–20 min — Setup: abrir a biblioteca no Beekeeper Studio
+## 20–25 min — Setup: abrir a biblioteca no Beekeeper Studio
 
 Siga o [README.md](README.md) da pasta: cada aluno cria sua própria conexão
 SQLite no Beekeeper Studio e roda o [`biblioteca.sql`](biblioteca.sql) para
@@ -77,7 +123,7 @@ os 10 livros aparecerem.
 
 ---
 
-## 20–40 min — Queries para fazer junto (guie, não entregue pronto no chat)
+## 25–45 min — Queries para fazer junto (guie, não entregue pronto no chat)
 
 Peça para cada um digitar e rodar — não é para colar. Depois de cada query,
 pergunte "o que essa linha faz?" antes de rodar.
@@ -122,17 +168,19 @@ GROUP BY genero;
 ```
 Pergunta: *"Qual gênero tem mais livros na nossa biblioteca?"*
 
-### 40–45 min — PONTO DE PARADA
+### 45–50 min — PONTO DE PARADA
 Se todos escreveram e entenderam a query 4 (JOIN), siga para os desafios.
 Se a turma está travando no WHERE/ORDER BY, fique mais tempo nas queries 1–3
 e leve o JOIN como desafio guiado, cortando os desafios sozinhos pela metade.
 
 ---
 
-## 45–55 min — ✅ MARCO MÍNIMO: a aula já valeu aqui
+## 50–55 min — ✅ MARCO MÍNIMO: a aula já valeu aqui
 
 Cada aluno consegue, sozinho:
-- [ ] explicar a diferença entre relacional e não relacional com um exemplo;
+- [ ] dizer a diferença entre SQL e NoSQL com um exemplo do próprio projeto;
+- [ ] apontar, na tabela `livros`, qual coluna é a chave primária e qual é a
+      chave estrangeira, e explicar para que cada uma serve;
 - [ ] escrever um `SELECT ... WHERE ...` sem ajuda;
 - [ ] ler um `JOIN` pronto e dizer o que ele faz.
 
@@ -181,7 +229,14 @@ com perguntas, não com a query pronta.
 ## Registro pós-aula
 - Chegou até: (marco mínimo? quantos desafios sozinhos?)
 - Presença: Benício / Caio / Nicolas
-- Dificuldades observadas:
-- Ajuste para a próxima aula:
+- Dificuldades observadas: 1ª aplicação desta aula passou rápido demais pelos
+  conceitos de SQL vs. NoSQL e por chave primária/chave estrangeira — a turma
+  saiu sem esses conceitos consolidados, mesmo executando as queries. Parte 0
+  foi reescrita (2026-09-07) com definições explícitas + diagrama de PK/FK e
+  um teste de entendimento antes de abrir o Beekeeper.
+- Ajuste para a próxima aula: abrir a próxima sessão com uma recapitulação
+  rápida (5 min) de SQL/NoSQL e PK/FK antes de qualquer coisa nova, usando o
+  diagrama da Parte 0 e a pergunta "o que acontece se eu inventar um autor_id
+  que não existe?".
 - Próximo tema sugerido: retomar o cronograma oficial (aula #6 — Avançando com
   a Biblioteca Digital em Mongo)

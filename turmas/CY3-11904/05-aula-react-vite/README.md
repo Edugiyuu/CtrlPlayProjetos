@@ -32,7 +32,7 @@ Abra o endereço mostrado no terminal (geralmente <http://localhost:5173>).
 ## Como rodar esta versão pronta
 
 ```bash
-cd aula-react-vite
+cd 05-aula-react-vite
 npm install
 npm run dev
 ```
@@ -40,7 +40,7 @@ npm run dev
 ## Estrutura
 
 ```text
-aula-react-vite/
+05-aula-react-vite/
 ├── index.html
 ├── package.json
 ├── vite.config.js

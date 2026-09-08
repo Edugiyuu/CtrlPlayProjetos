@@ -1,13 +1,21 @@
 # CtrlPlay Alunos
 
-Cada pasta representa um projeto independente para as aulas:
+Material de aula organizado **por turma**. Cada turma tem sua própria pasta
+em [`turmas/`](turmas/), no formato `<CÓDIGO>-<id>` (ex.: `CY4-11350`), com um
+subprojeto por aula dentro dela:
 
 ```text
 CtrlPlayAlunos/
-├── primeira-webcam-opencv/
-├── projeto-quiz-dom/
-└── teclado-virtual-opencv/
+├── turmas/
+│   ├── CY1-10671/<projetos da turma CY1 #10671>
+│   ├── CY2-11342/<projetos da turma CY2 #11342>
+│   └── ...
+└── outros-projetos/   # material avulso, não preso a uma turma específica
 ```
+
+Na hora de dar aula: abra [`turmas/`](turmas/), ache o código+id da turma do
+dia (bate com `alunos/progresso/turma-<id>.md`) e pegue a pasta do projeto de
+lá. Veja o índice completo em [turmas/README.md](turmas/README.md).
 
 ## Para os alunos
 
@@ -33,13 +41,13 @@ py -3.11 -m pip install --user mediapipe==0.10.21 PyAutoGUI
 No VS Code, selecione **Python 3.11** como interpretador. Depois disso, os
 alunos podem usar apenas o botão de executar.
 
-## Projetos
+## Projetos avulsos (sem turma fixa)
 
-- [Mão verde com OpenCV](./primeira-webcam-opencv/README.md)
-- [Teclado virtual com OpenCV](./teclado-virtual-opencv/README.md)
-- [Quiz interativo com DOM](./projeto-quiz-dom/ROTEIRO-AULA.md)
-- [Ficha de Herói — Colocando estilo (CSS)](./aula-css-colocando-estilo/README.md)
-- [Central de Heróis com React + Vite](./aula-react-vite/README.md)
+- [Mão verde com OpenCV](./outros-projetos/primeira-webcam-opencv/README.md)
+- [Teclado virtual com OpenCV](./outros-projetos/teclado-virtual-opencv/README.md)
+- [Quiz interativo com DOM](./outros-projetos/projeto-quiz-dom/ROTEIRO-AULA.md)
+- [CRUD de Cartas Pokémon](./outros-projetos/crud-cartas-pokemon/README.md)
+- [Scripts de Minigolfe (Unity)](./outros-projetos/aula-unity-minigolf/SCRIPTS-VERSAO-ANTIGA.md)
 
 ## Aulas
 
