@@ -6,10 +6,13 @@ Fluxo padrão para preparar, dar e registrar aulas neste repositório.
 
 ```text
 CtrlPlayAlunos/
+├── docs/class/                    # TEMPLATES de aula (copiar a pasta inteira)
+│   ├── README.md                  # qual template usar + regras de ouro
+│   ├── aula-pratica/              # o aluno programa
+│   └── aula-teorica/              # o aluno entende e explica
 ├── alunos/
 │   ├── progresso/                 # 1 arquivo por turma (turma-<id>.md)
 │   ├── progresso-turma-template.md
-│   ├── AULA-PASSO-A-PASSO-template.md  # modelo opcional do arquivo do aluno
 │   └── WORKFLOW-AULAS.md          # este arquivo
 ├── turmas/
 │   ├── README.md                   # índice: toda turma, horário, link pro progresso
@@ -43,7 +46,21 @@ workshop avulso, ou ainda não atribuído) vai em `outros-projetos/` na raiz.
 O `AULA-PASSO-A-PASSO.md` é **opcional**. Só crie quando o aluno vai executar
 sozinho (sem você conduzindo) — aula assíncrona, tarefa de casa, aluno adiantado.
 Numa aula que você dá ao vivo, o `ROTEIRO-AULA.md` já basta. Quando fizer, use
-[`alunos/AULA-PASSO-A-PASSO-template.md`](AULA-PASSO-A-PASSO-template.md).
+[`docs/class/aula-pratica/AULA-PASSO-A-PASSO.md`](../docs/class/aula-pratica/AULA-PASSO-A-PASSO.md).
+
+## Templates de aula (começar por aqui)
+
+Não escreva aula do zero. Copie o esqueleto pronto e preencha:
+
+```bash
+cp -r docs/class/aula-pratica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula   # o aluno programa
+cp -r docs/class/aula-teorica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula   # o aluno entende e explica
+```
+
+Qual usar, o que tem dentro de cada um e as **6 regras de ouro** (aluno escreve
+o código, cortar o escopo pela metade, marco mínimo, conceito com seção
+própria, pré-requisito real, material do aluno é do aluno):
+[`docs/class/README.md`](../docs/class/README.md).
 
 ## Conferir turmas atualizadas (rodar sempre, antes de planejar)
 
@@ -134,12 +151,13 @@ criou componentes com props, só. O material estava certo, mas grande demais.
    "Conferir turmas atualizadas" acima) — só então seguir para o cronograma.
 1. Abrir `alunos/progresso/turma-<id>.md` e ver a próxima aula em
    **Próximos passos** e no **Cronograma**.
-2. Criar a pasta do projeto dentro da turma, com o número da aula na frente:
+2. Criar a pasta do projeto **copiando o template** de `docs/class/`
+   (`aula-pratica` ou `aula-teorica`) para
    `turmas/<CÓDIGO>-<id>/<NN>-nome-curto-descritivo/`.
-3. Escrever o `ROTEIRO-AULA.md` a partir do modelo abaixo.
-4. Escrever o `README.md` (objetivo, o que pratica, como rodar).
-   Se — e só se — o aluno vai fazer sozinho, escrever também o
-   `AULA-PASSO-A-PASSO.md` a partir de `alunos/AULA-PASSO-A-PASSO-template.md`.
+3. Preencher o `ROTEIRO-AULA.md` — é onde a aula é pensada, faça ele primeiro.
+4. Preencher o `README.md` (objetivo, o que pratica, como rodar) e o arquivo
+   do aluno (`DESAFIO.md` ou `ATIVIDADE.md`). O `AULA-PASSO-A-PASSO.md` só se
+   — e só se — o aluno vai fazer sozinho.
 5. Montar a versão pronta do projeto (código de referência do professor).
 6. Testar do zero: apagar `node_modules`, instalar e rodar como o aluno faria.
 7. Anotar no cronograma a data e marcar a aula como `🟡 Em andamento`.
@@ -172,43 +190,22 @@ No arquivo da turma:
 
 - [ ] `python alunos/buscar_turmas.py` rodado, turma/alunos conferidos
 - [ ] Tema e número da aula definidos no cronograma
-- [ ] Pasta do projeto criada
+- [ ] Pasta criada a partir do template certo (`docs/class/aula-pratica` ou
+      `docs/class/aula-teorica`)
 - [ ] `ROTEIRO-AULA.md` com blocos de tempo somando a duração da aula
-- [ ] `README.md` com "o que o aluno pratica" e "como rodar"
-- [ ] `AULA-PASSO-A-PASSO.md` **só se** o aluno vai fazer sozinho — nesse caso
-      só "você", com MARCO MÍNIMO e ponto de parada
-- [ ] Escopo estimado e cortado pela metade
-- [ ] Código de referência funcionando
-- [ ] 3–5 desafios extras para quem terminar antes
+- [ ] Escopo estimado e **cortado pela metade**
+- [ ] **Marco mínimo** explícito + ponto de parada no meio
+- [ ] Cada conceito do objetivo tem seção própria + pergunta de checagem
+- [ ] `README.md` com "o que o aluno pratica/entende" e "como rodar"
+- [ ] Arquivo do aluno (`DESAFIO.md` / `ATIVIDADE.md`) **sem código pronto**
+- [ ] `AULA-PASSO-A-PASSO.md` **só se** o aluno vai fazer sozinho
+- [ ] Gabarito completo e testado
+- [ ] 3–5 extras para quem terminar antes
 - [ ] Lista de erros comuns
 
-## Modelo de ROTEIRO-AULA.md
-
-```markdown
-# Roteiro de Aula: <tema>
-
-## Dados
-- Turma alvo: #<id> (aula #<n>)
-- Projeto: <nome>
-- Duração: ~<x>h
-- Pré-requisito do aluno: <o que já viu>
-
-## Objetivo
-<1 parágrafo>
-
-## Conceitos da aula
-| Conceito | Onde aparece |
-|----------|--------------|
-
-## Roteiro sugerido para <x> horas
-### 0–15 min — <bloco>
-### ...
-
-## Perguntas para conduzir a aula
-## Desafios se sobrar tempo
-## Erros comuns
-## Registro pós-aula
-```
+> O modelo de `ROTEIRO-AULA.md` (e de todos os outros arquivos da aula) mora
+> em [`docs/class/`](../docs/class/README.md) — um esqueleto para aula
+> **prática** e outro para aula **teórica**. Copie a pasta, não escreva do zero.
 
 ## Convenções
 

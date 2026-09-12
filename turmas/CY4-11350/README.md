@@ -14,6 +14,7 @@ depois da primeira aula de SQL. Ver decisão completa na memória
 | Aula | Pasta |
 |---:|---|
 | #6 | [06-aula-sql-relacional-nao-relacional/](06-aula-sql-relacional-nao-relacional/) — SQL vs. NoSQL, Beekeeper Studio |
+| extra | [extra-aula-sql-modelagem-5-tabelas/](extra-aula-sql-modelagem-5-tabelas/) — Boletim da Escola: modelar e criar 5 tabelas com PK/FK, sem JOIN (entre a #6 e a #7) |
 | #7 | [07-aula-biblioteca-sql-mvc/](07-aula-biblioteca-sql-mvc/) — MVC, SQLite + Sequelize |
 | #8 | [08-aula-biblioteca-sql-docs-api/](08-aula-biblioteca-sql-docs-api/) — Swagger |
 | #9 | [09-aula-biblioteca-sql-filtros-paginacao/](09-aula-biblioteca-sql-filtros-paginacao/) |
@@ -26,6 +27,13 @@ depois da primeira aula de SQL. Ver decisão completa na memória
 | #16 | [16-aula-react-pokemons-revisao/](16-aula-react-pokemons-revisao/) — sem banco, revisão de React |
 | #17 | [17-aula-biblioteca-react-hook-form/](17-aula-biblioteca-react-hook-form/) |
 | #18 | [18-aula-biblioteca-tailwind-ia/](18-aula-biblioteca-tailwind-ia/) |
+
+A aula **extra** entre a #6 e a #7 não está no cronograma oficial (daí o prefixo
+`extra-`, sem número): a #6 ficou em consultar um banco que já vinha pronto, e
+chave primária/estrangeira não firmou — e a #7 (associações no Sequelize)
+depende disso. Ela não renumera nada: a aula seguinte continua sendo a #7.
+⚠️ `JOIN` **não foi dado** na #6, então o material da extra não usa `JOIN` em
+lugar nenhum; segue-se a chave na mão, com `WHERE`.
 
 Aulas #7–#13 e #17–#18 continuam o **mesmo projeto** (Biblioteca Digital).
 Aulas #14–#15 são um projeto novo (Lista de Tarefas), pra turma consolidar

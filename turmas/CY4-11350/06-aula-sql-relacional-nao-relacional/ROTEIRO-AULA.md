@@ -234,6 +234,11 @@ com perguntas, não com a query pronta.
   saiu sem esses conceitos consolidados, mesmo executando as queries. Parte 0
   foi reescrita (2026-09-07) com definições explícitas + diagrama de PK/FK e
   um teste de entendimento antes de abrir o Beekeeper.
+- **`JOIN` não foi explicado** (queries 4 e 5 e os desafios 3–6 ficaram de
+  fora — não deu tempo). A turma saiu com `SELECT`, `WHERE` e `ORDER BY`.
+  Não assumir `JOIN` em nenhuma aula seguinte sem dar antes: a aula extra
+  ([extra-aula-sql-modelagem-5-tabelas/](../extra-aula-sql-modelagem-5-tabelas/))
+  foi escrita sem `JOIN` por causa disso.
 - Ajuste para a próxima aula: abrir a próxima sessão com uma recapitulação
   rápida (5 min) de SQL/NoSQL e PK/FK antes de qualquer coisa nova, usando o
   diagrama da Parte 0 e a pergunta "o que acontece se eu inventar um autor_id

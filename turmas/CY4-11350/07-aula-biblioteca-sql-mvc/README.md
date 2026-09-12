@@ -19,6 +19,17 @@ Turma já sabe Express, rotas, CRUD, e já criou Models e CRUD com Mongoose
 (aula #5). Já viu SQL na prática (aula #6 — SELECT, WHERE, JOIN, chave
 primária/estrangeira). **Sequelize e a organização MVC são novidade hoje.**
 
+> ⚠️ **`JOIN` não foi dado na #6** — verificar antes de planejar esta aula.
+>
+> Se a [aula extra de modelagem](../extra-aula-sql-modelagem-5-tabelas/) já foi
+> dada, eles criaram um banco de 5 tabelas do zero e sabem onde uma chave
+> estrangeira mora — a associação `Livro.belongsTo(Autor)` daqui é só o nome
+> Sequelize disso. Lá eles percorreram as relações **na mão**, com dois
+> `SELECT`, justamente pra sentir falta do `JOIN`: abrir esta aula mostrando o
+> `JOIN` que faz aquilo de uma vez é a deixa pronta. Se a extra **não** foi
+> dada, assumir que PK/FK ainda é decoreba e gastar os primeiros 10 min no
+> diagrama da aula #6.
+
 ## Como rodar
 Este projeto continua o Express da Biblioteca Digital que vocês já têm.
 

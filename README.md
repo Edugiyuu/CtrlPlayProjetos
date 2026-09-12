@@ -10,6 +10,7 @@ CtrlPlayAlunos/
 │   ├── CY1-10671/<projetos da turma CY1 #10671>
 │   ├── CY2-11342/<projetos da turma CY2 #11342>
 │   └── ...
+├── docs/class/        # templates de aula (prática e teórica) — copiar e preencher
 └── outros-projetos/   # material avulso, não preso a uma turma específica
 ```
 
@@ -51,6 +52,14 @@ alunos podem usar apenas o botão de executar.
 
 ## Aulas
 
-O fluxo para planejar, dar e registrar aulas está em
+Para **criar uma aula nova**, copie o esqueleto pronto de
+[`docs/class/`](./docs/class/README.md) — tem um para aula **prática** (o aluno
+programa) e outro para aula **teórica** (o aluno entende e explica):
+
+```bash
+cp -r docs/class/aula-pratica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula
+```
+
+O fluxo completo para planejar, dar e registrar aulas está em
 [alunos/WORKFLOW-AULAS.md](./alunos/WORKFLOW-AULAS.md). O progresso de cada turma
 fica em `alunos/progresso/turma-<id>.md`.

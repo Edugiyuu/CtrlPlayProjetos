@@ -8,3 +8,4 @@ Python básico (turma regular, 4 alunos: Enzo, Eric, Lucas Basso, Lucas Borges)
 | Pasta | Quando usar |
 |---|---|
 | [extra-aula-jogo-forca/](extra-aula-jogo-forca/) | Aula extra de reforço (loop + lista), entre a aula #5 e a #6 do cronograma oficial |
+| [07-aula-funcoes/](07-aula-funcoes/) | Aula #7 do cronograma — funções do zero, em bateria de exercícios curtos com contrato e teste prontos |

@@ -1,7 +1,8 @@
 <!--
   TEMPLATE de aula passo a passo — o arquivo OPCIONAL que vai PARA O ALUNO.
   Só crie quando o aluno vai executar sozinho (assíncrono, casa, adiantado).
-  Copie para <projeto-da-aula>/AULA-PASSO-A-PASSO.md e preencha.
+  Numa aula que você dá ao vivo, o ROTEIRO-AULA.md + DESAFIO.md já bastam —
+  neste caso APAGUE este arquivo da pasta da aula.
 
   Regras de ouro:
 
