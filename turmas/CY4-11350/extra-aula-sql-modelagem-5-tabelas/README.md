@@ -46,6 +46,11 @@ recusar um dado.
   apagar o professor?"); plantar a dúvida e seguir.
 - Normalização formal (1FN/2FN/3FN), índices, migrations, relacionamento 1:1.
 
+> 📖 Os tipos de relacionamento (1:1, 1:N, N:N), com mais exemplos e os erros
+> clássicos de modelagem, estão em
+> [`docs/referencia/relacionamentos-modelagem-dados.md`](../../../docs/referencia/relacionamentos-modelagem-dados.md).
+> Vale reler antes de dar a aula.
+
 ## O modelo
 
 ```text

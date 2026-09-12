@@ -77,6 +77,10 @@ siga a chave, porque é assim que você descobre se ela está certa."
 | Seguir a chave na mão | Ler o valor da FK e buscar esse `id` na outra tabela, com `WHERE` | Etapas 2, 4 e 5 |
 | `PRAGMA foreign_keys = ON` | No SQLite a checagem de FK vem **desligada** por padrão | Setup + Etapa 3 |
 
+> 📖 Referência dos tipos de relacionamento, com mais exemplos reais, os erros
+> clássicos de modelagem e o equivalente em Mongo/Sequelize:
+> [`docs/referencia/relacionamentos-modelagem-dados.md`](../../../docs/referencia/relacionamentos-modelagem-dados.md).
+
 > ⚠️ O item mais importante da tabela é o **`PRAGMA`**. Sem ele o SQLite aceita
 > `professor_id = 99` sem reclamar — e a promessa que eu fiz na aula #6 ("o
 > banco recusa") sai como mentira na frente deles. Tem que estar ligado antes

@@ -63,3 +63,12 @@ cp -r docs/class/aula-pratica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula
 O fluxo completo para planejar, dar e registrar aulas está em
 [alunos/WORKFLOW-AULAS.md](./alunos/WORKFLOW-AULAS.md). O progresso de cada turma
 fica em `alunos/progresso/turma-<id>.md`.
+
+## Referência de conteúdo
+
+Material de consulta sobre os conceitos, independente de turma — para preparar
+aula e para consultar na hora:
+
+- [Relacionamentos em modelagem de dados](./docs/referencia/relacionamentos-modelagem-dados.md)
+  — 1:1, 1:N, N:N, tabela de junção e auto-relacionamento, com exemplos reais
+  e o equivalente em Mongo e Sequelize.
