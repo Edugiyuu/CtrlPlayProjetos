@@ -60,8 +60,9 @@ atividade no Excalidraw, com apresentação no fim.">
 
 ## Registro pós-aula
 
-Atualizar `alunos/progresso/turma-<id>.md`: status da aula #<N>, presença, e
-**o que eles realmente entenderam** — não "vimos o conteúdo X", e sim "o
-Fulano ainda confunde A com B". Guardar os artefatos (print/link) se forem
-servir de referência depois.
+Não editar o `.md` na mão no fim da aula. **Despejar cru** (chat, voz, bloco
+de notas): **o que eles realmente entenderam** — não "vimos o conteúdo X", e
+sim "o Fulano ainda confunde A com B" —, quem faltou e o que ajustar na
+próxima. O arquivo da turma é preenchido a partir desse despejo. Guardar os
+artefatos (print/link) se forem servir de referência depois.
 Fluxo em [alunos/WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md).

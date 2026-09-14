@@ -133,6 +133,9 @@ funciona.
 | `exigirPapel` sempre barra | Papel não foi incluído no `jwt.sign` do login, então `req.usuario.papel` vem `undefined` |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

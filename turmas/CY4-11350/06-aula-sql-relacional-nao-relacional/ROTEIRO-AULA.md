@@ -227,6 +227,9 @@ com perguntas, não com a query pronta.
 | Beekeeper não salva o arquivo `.sqlite` | Ao criar a conexão, escolher "Create a new database" e apontar para uma pasta com permissão de escrita |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? quantos desafios sozinhos?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas: 1ª aplicação desta aula passou rápido demais pelos

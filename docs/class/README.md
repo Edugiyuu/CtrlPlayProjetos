@@ -141,9 +141,9 @@ curtir o tema, trocar o tema é barato — os conceitos são os mesmos.
 
 ### Depois da aula
 
-Em `alunos/progresso/turma-<id>.md`: status `✅ Concluída`, **até onde o aluno
-chegou de verdade** nas Observações, presença, "Aulas concluídas X / N",
-Próximos passos e a data em `_Última atualização:_`. Atualizar também o
-`README.md` da pasta da turma.
+**Não preencher o `.md` na mão.** Despejar cru — até onde chegaram de
+verdade, quem faltou, onde travou, o que muda na próxima — e daí sai o
+`alunos/progresso/turma-<id>.md` (status `✅ Concluída`, Observações, "Aulas
+concluídas X / N", Próximos passos, data) e o `README.md` da pasta da turma.
 
 Fluxo completo: [`alunos/WORKFLOW-AULAS.md`](../../alunos/WORKFLOW-AULAS.md).

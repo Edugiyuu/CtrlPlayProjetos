@@ -119,6 +119,9 @@ fala com a IA).
 | Resumo demora e a tela "trava" | Faltou estado de carregando — a chamada é assíncrona, a tela devia refletir isso |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

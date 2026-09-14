@@ -123,6 +123,9 @@ no axios, esse já é o marco mínimo da aula.
 | Formulário não limpa depois de salvar | Faltou chamar `reset()` dentro do `onSubmit` |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

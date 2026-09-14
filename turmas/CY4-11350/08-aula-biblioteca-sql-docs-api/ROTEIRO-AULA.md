@@ -136,6 +136,9 @@ confirmar que agora vem `404`, não `200` com corpo vazio.
 | Try it out dá erro de CORS | Normal se estiver testando de outra origem — nesta aula, testar sempre em `localhost` |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

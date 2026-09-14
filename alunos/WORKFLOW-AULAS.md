@@ -140,8 +140,8 @@ criou componentes com props, só. O material estava certo, mas grande demais.
 - **Se houver arquivo do aluno**, ele é do aluno: `AULA-PASSO-A-PASSO.md` só
   fala "você" — nada de turma, sessões, rubrica ou "registrar progresso". Isso
   tudo fica no `ROTEIRO-AULA.md`.
-- Depois da aula, anote em Observações **até onde o aluno chegou de verdade** e
-  ajuste o escopo da próxima.
+- Depois da aula, **despeje** até onde o aluno chegou de verdade (sem formatar —
+  ver "Depois da aula") e ajuste o escopo da próxima.
 
 ## Ciclo de uma aula
 
@@ -150,7 +150,9 @@ criou componentes com props, só. O material estava certo, mas grande demais.
 0. Rodar `python alunos/buscar_turmas.py` e conferir se algo mudou (ver
    "Conferir turmas atualizadas" acima) — só então seguir para o cronograma.
 1. Abrir `alunos/progresso/turma-<id>.md` e ver a próxima aula em
-   **Próximos passos** e no **Cronograma**.
+   **Próximos passos** e no **Cronograma**. Se a aula anterior ficou sem
+   registro (status ainda não é `✅`), começar pelo despejo dela — ver
+   "Depois da aula" abaixo.
 2. Criar a pasta do projeto **copiando o template** de `docs/class/`
    (`aula-pratica` ou `aula-teorica`) para
    `turmas/<CÓDIGO>-<id>/<NN>-nome-curto-descritivo/`.
@@ -167,16 +169,41 @@ criou componentes com props, só. O material estava certo, mas grande demais.
 - Seguir o roteiro; não entregar o código pronto de uma vez.
 - Marcar presença mentalmente / em papel para lançar depois.
 
-### 3. Depois da aula — registrar
+### 3. Depois da aula — despejar, não redigir
 
-No arquivo da turma:
+**Não edite o `.md` na mão no fim da aula.** Escrever tabela cansado é o jeito
+mais rápido de o registro simplesmente não acontecer — foi o que aconteceu com
+as colunas de presença, que ficaram vazias em todas as turmas até serem
+aposentadas. O arquivo da turma é o resultado do registro, não o formulário.
 
-- Cronograma: mudar status para `✅ Concluída` e preencher **Observações**.
-- **Progresso por Aluno:** presença, projetos entregues, dificuldades.
-- **Resumo Geral:** atualizar "Aulas concluídas X / N" e **Próximos passos**
-  com o nome da próxima aula.
-- Trocar a data em `_Última atualização:_`.
-- Commit: `git add -A && git commit -m "aula #N turma <id>: <tema>"`.
+O que você faz, ainda na sala ou no carro, em 30 segundos: **despejar cru** —
+no chat do Claude Code, por voz transcrita, no bloco de notas, tanto faz. Sem
+formato, sem tabela, sem ordem:
+
+> "turma 11350 aula 7 hoje. o Benício travou de novo na FK, o Caio faltou.
+> chegaram só até o model do Livro, controller nem começou. de novo não deu
+> tempo do JOIN. próxima aula tem que comecar pelo controller e cortar o
+> swagger."
+
+A partir desse despejo, o registro estruturado é feito **por mim**:
+
+- Cronograma: status `✅ Concluída` + **Observações** (até onde chegou de verdade).
+- **Progresso por Aluno:** nível e dificuldades de quem apareceu no despejo.
+- **Resumo Geral:** "Aulas concluídas X / N" e **Próximos passos**.
+- Data em `_Última atualização:_`.
+- Commit: `aula #N turma <id>: <tema>`.
+
+Quatro coisas que valem ouro no despejo, se lembrar — são as que mudam a
+próxima aula: **até onde chegaram de verdade**, **quem faltou**, **onde
+travaram** e **o que cortar/adiantar na próxima**. Se só lembrar de uma,
+mande uma. Meia linha registrada vale mais que a tabela perfeita que você
+não escreveu.
+
+Presença oficial, nota e entrega continuam no **portal da Ctrl Play** — o
+arquivo da turma não duplica isso.
+
+Se o despejo não aconteceu, não tem crise: ele vira a primeira pergunta do
+planejamento da próxima aula (passo 1), enquanto a memória ainda serve.
 
 ## Planejar uma turma nova
 

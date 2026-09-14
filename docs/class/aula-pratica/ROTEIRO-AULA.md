@@ -142,11 +142,14 @@ Serve pra você ver se <conceito 1> + <conceito 2> ficaram de pé.
 
 ## Registro pós-aula
 
-Atualizar `alunos/progresso/turma-<id>.md`:
+Sem editar tabela cansado. **Despejo cru** — o que lembrar, na ordem que
+lembrar:
 
-- Cronograma: status da aula #<N> + Observações com **até onde o aluno chegou
-  de verdade** (fez o marco mínimo? chegou no bônus? fez o desafio?).
-- Progresso por Aluno: presença, dificuldades observadas.
-- Resumo Geral: "Aulas concluídas X / N" e Próximos passos → aula #<N+1>.
-- Data em `_Última atualização:_`.
-- Atualizar também o `README.md` da pasta da turma.
+- **Até onde chegaram de verdade** (fez o marco mínimo? chegou no bônus? fez
+  o desafio?).
+- **Quem faltou.**
+- **Onde travou** — nominalmente, se der.
+- **O que cortar ou adiantar** na aula #<N+1>.
+
+Desse despejo saem `alunos/progresso/turma-<id>.md` (status, Observações,
+Progresso por Aluno, Resumo Geral, data) e o `README.md` da pasta da turma.

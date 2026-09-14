@@ -147,6 +147,9 @@ senha original.
 | Login retorna 500 em vez de 401 | Faltou tratar o caso de usuário não encontrado antes de comparar a senha |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

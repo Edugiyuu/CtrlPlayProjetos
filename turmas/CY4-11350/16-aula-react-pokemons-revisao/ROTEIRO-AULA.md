@@ -105,6 +105,9 @@ buscar um inválido mostra a mensagem de erro, sem quebrar a tela.
 | Erro não aparece, tela quebra | Faltou o `if (!resposta.ok)` — `fetch` não rejeita sozinho em 404 |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

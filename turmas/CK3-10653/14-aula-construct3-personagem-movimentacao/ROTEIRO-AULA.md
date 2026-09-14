@@ -167,6 +167,9 @@ sair sem salvar.
 | Animação não troca | Nome da animação no evento diferente do nome real (maiúsculas contam) |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? qual bônus?)
 - Presença:
 - Dificuldades observadas:

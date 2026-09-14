@@ -121,6 +121,9 @@ está lá (mas com o valor **não** legível como texto puro).
 | Lista de livros nunca aparece | `useEffect` sem array de dependências `[]`, rodando em loop, ou a URL da API está errada |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

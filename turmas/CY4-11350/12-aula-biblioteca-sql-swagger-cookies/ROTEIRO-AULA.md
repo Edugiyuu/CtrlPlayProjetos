@@ -122,6 +122,9 @@ protegida na mesma aba — deve funcionar porque o cookie já está lá.
 | Swagger não manda o cookie no "Try it out" | Fez login numa aba/domínio diferente do `/api-docs` |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

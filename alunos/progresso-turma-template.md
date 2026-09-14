@@ -18,10 +18,10 @@
 > Status: ⬜ Não iniciada · 🟡 Em andamento · ✅ Concluída · ⏭️ Remarcada
 
 ## Progresso por Aluno
-| Aluno | Presença (%) | Projetos entregues | Nota/Avaliação | Nível atual | Observações |
-|-------|-------------:|--------------------|----------------|-------------|-------------|
-| | | | | | |
-| | | | | | |
+| Aluno | Nível atual | Observações |
+|-------|-------------|-------------|
+|  |  |  |
+|  |  |  |
 
 ## Marcos / Entregas
 | Entrega | Data limite | Descrição | Concluída |
@@ -30,7 +30,6 @@
 
 ## Resumo Geral
 - **Aulas concluídas:** 0 / 0
-- **Presença média da turma:** 0%
 - **Principais dificuldades:**
 - **Próximos passos:**
 

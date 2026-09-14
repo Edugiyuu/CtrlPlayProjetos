@@ -342,6 +342,9 @@ Todos sem `JOIN`, de propósito:
 | `UNIQUE constraint failed: materias.id` | Repetiu um `id` no `INSERT`; ou deixar o SQLite gerar (omitir a coluna `id`) |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Atualizar `alunos/progresso/turma-11350.md`:
 

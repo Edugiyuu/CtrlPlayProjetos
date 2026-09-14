@@ -139,6 +139,9 @@ está cumprida.
 | `#qtd-pontos` sempre 0 | leu `.value` do elemento errado, ou id trocado |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Atualizar `alunos/progresso/turma-11342.md`: status da aula #6, presença do
 Murilo, até que desafio (E1–E4) ele chegou, e se o bug dos dois listeners (E2)

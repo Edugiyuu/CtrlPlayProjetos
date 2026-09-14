@@ -113,6 +113,9 @@ operação, priorizar terminar o CRUD — os desafios ficam de bônus.
 | Servidor quebra em vez de devolver `400` | Faltou o `try/catch` ou a validação manual antes do `create` |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? quantos desafios sozinhos?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas: (quanto de ajuda direta foi realmente necessário?)

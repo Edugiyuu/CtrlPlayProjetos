@@ -227,13 +227,16 @@ resposta longa demais pro nível deles.>
 
 ## Registro pós-aula
 
-Atualizar `alunos/progresso/turma-<id>.md`:
+Sem editar tabela cansado. **Despejo cru** — o que lembrar, na ordem que
+lembrar:
 
-- Cronograma: status da aula #<N> + Observações com **o que eles realmente
-  entenderam** (não "vimos o conteúdo X" — e sim "o Fulano ainda confunde A
-  com B").
-- Progresso por Aluno: presença, quem travou em quê.
-- Resumo Geral: "Aulas concluídas X / N" e Próximos passos → aula #<N+1>.
-- Data em `_Última atualização:_`.
-- Guardar os artefatos da atividade (print/link do Excalidraw) se forem servir
-  de referência depois.
+- **O que eles realmente entenderam** (não "vimos o conteúdo X" — e sim "o
+  Fulano ainda confunde A com B").
+- **Quem faltou.**
+- **Quem travou em quê.**
+- **O que ajustar** na aula #<N+1>.
+
+Desse despejo saem `alunos/progresso/turma-<id>.md` (status, Observações,
+Progresso por Aluno, Resumo Geral, data) e o `README.md` da pasta da turma.
+Guardar os artefatos da atividade (print/link do Excalidraw) se forem servir
+de referência depois.

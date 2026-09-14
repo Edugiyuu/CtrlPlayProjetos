@@ -372,6 +372,9 @@ Leitura de ritmo:
 | Devolveu texto onde o teste pede `True` | saiu `sim`, esperado `True` | "o que o teste está pedindo exatamente?" |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Atualizar `alunos/progresso/turma-10671.md`:
 

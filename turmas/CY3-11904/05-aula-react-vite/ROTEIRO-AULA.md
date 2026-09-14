@@ -96,6 +96,9 @@ e uma tela que se atualiza sozinha quando os dados mudam.
 - Rodar o comando na pasta errada do terminal.
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Depois da aula, atualizar `alunos/progresso/turma-11904.md`:
 status da aula #5, presença do Miguel e dificuldades observadas.

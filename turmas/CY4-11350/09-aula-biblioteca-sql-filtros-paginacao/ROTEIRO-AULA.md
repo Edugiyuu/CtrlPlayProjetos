@@ -115,6 +115,9 @@ paginação, deixar filtro como o marco mínimo e paginação de casa.
 | `totalPaginas` errado | Usou `rows.length` em vez de `count` pra calcular |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

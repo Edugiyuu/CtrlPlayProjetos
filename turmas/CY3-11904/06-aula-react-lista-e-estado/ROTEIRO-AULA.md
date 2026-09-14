@@ -213,6 +213,9 @@ Serve pra você ver se props + `.map()` + cálculo no JSX ficaram de pé.
 | Frete sempre "R$ 10" | `preco` veio como texto (com aspas no array) |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Atualizar `alunos/progresso/turma-11904.md`:
 

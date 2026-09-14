@@ -153,6 +153,9 @@ igual já faziam com Mongo, só trocando o controller por dentro.
 | Servidor não sobe | Falta `npm install sqlite3` (o driver, não só o `sequelize`) |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:

@@ -64,6 +64,8 @@ E1+E2 na aula (E2 fecha o marco mínimo). E3 se sobrar tempo. E4 de casa.">
 
 ## Registro pós-aula
 
-Atualizar `alunos/progresso/turma-<id>.md`: status da aula #<N>, presença,
-**até onde o aluno chegou de verdade** e a próxima aula.
+Não editar o `.md` na mão no fim da aula. **Despejar cru** (chat, voz, bloco
+de notas): **até onde o aluno chegou de verdade**, quem faltou, onde travou e
+o que cortar/adiantar na próxima. O arquivo da turma é preenchido a partir
+desse despejo.
 Fluxo em [alunos/WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md).

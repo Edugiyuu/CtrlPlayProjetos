@@ -107,6 +107,9 @@ passo a passo normal.
 - Cor escrita errada (`gray` ok, `grey` ok, `#77` incompleto não).
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 
 Atualizar `alunos/progresso/turma-11342.md`: status da aula #5, presença do
 Murilo, e anotar na coluna Observações que ele está adiantado. Fluxo em

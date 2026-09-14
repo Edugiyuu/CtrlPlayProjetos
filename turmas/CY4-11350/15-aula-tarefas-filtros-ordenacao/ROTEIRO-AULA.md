@@ -103,6 +103,9 @@ fizeram na aula #9, devolvendo os metadados (`totalPaginas`, `totalItens`).
 | Filtro e ordenação juntos falham | Um dos dois foi escrito sobrescrevendo o objeto de opções do `findAll` em vez de combinar |
 
 ## Registro pós-aula
+_Não preencher aqui. **Despeje cru** (chat, voz, notas) o que lembrar destes
+pontos — o registro estruturado sai daí. Ver
+[WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)._
 - Chegou até: (marco mínimo? algum bônus?)
 - Presença: Benício / Caio / Nicolas
 - Dificuldades observadas:
