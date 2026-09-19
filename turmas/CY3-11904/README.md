@@ -21,3 +21,9 @@ Ter 09:00. Progresso completo: [turma-11904.md](../../alunos/progresso/turma-119
 > Aula #7: marco mínimo é só favoritar (`useState`+`onClick` num boolean).
 > Contador +/- é bônus. Estado "subindo" pro `App.jsx` (carrinho geral) fica
 > pra mais na frente, de propósito — não empurrar complexidade extra.
+>
+> **Aula #7 na prática:** não rolou esse material. O Eduardo viu que props
+> ainda não estava sólido e usou a aula inteira pra reforçar isso (novo
+> parâmetro em cada componente, explicando parâmetro do zero). O material de
+> favoritar/`useState` acima **não foi dado** — fica pendente pra #8, antes
+> do tema oficial da calculadora (que já assume estado).
