@@ -1,21 +1,3 @@
-<!--
-  TEMPLATE — CARTÃO DE MEMÓRIA. Arquivo do ALUNO. OPCIONAL.
-
-  Para que serve: folha de consulta de UMA página que o aluno deixa aberta
-  numa aba durante o desafio, pra não ficar pulando entre README, roteiro e
-  Google. Só o que é usado NESTA aula — não é documentação.
-
-  Regras:
-  1. Cada item: o que é, como se escreve (forma genérica), e o que faz.
-     Pode ter a FORMA do comando (`elemento.addEventListener("click", fn)`),
-     porque é vocabulário — mas NÃO a solução do desafio.
-  2. Ordem de uso na aula, não ordem alfabética.
-  3. Se passar de uma página, você colocou coisa demais.
-  4. Só "você".
-
-  Apague este comentário antes de entregar ao aluno.
--->
-
 # Cartão de memória — <TEMA DA AULA>
 
 > Folha de consulta desta aula. Deixe aberta numa aba enquanto faz o desafio.

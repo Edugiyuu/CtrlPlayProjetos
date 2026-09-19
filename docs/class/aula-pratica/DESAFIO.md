@@ -1,22 +1,3 @@
-<!--
-  TEMPLATE — DESAFIO. Este arquivo é DO ALUNO.
-
-  PADRÃO OBRIGATÓRIO: copiar a estrutura de
-  turmas/CY2-11342/06-aula-js-placar-guilda/desafios/e1-ligar-o-js.md
-
-  Regras:
-  1. NADA de código pronto. Bullets curtos que dizem o ALVO, nomeiam a
-     FERRAMENTA (`.toUpperCase()`, `querySelector`, `.map()`) e fecham com um
-     "Teste agora" concreto. O aluno monta a linha.
-  2. Sem bloco de código grande, sem "duas formas, escolha uma", sem exemplo
-     genérico em ``` ```. Isso é dar de bandeja.
-  3. Só "você". Nada de turma, rubrica, blocos de tempo.
-  4. Se o desafio for grande, quebre em desafios acumulativos numa pasta
-     `desafios/e1-*.md`, `e2-*.md`... cada um com esta mesma estrutura.
-
-  Apague este comentário inteiro antes de entregar ao aluno.
--->
-
 # Desafio — <NOME CURTO DO DESAFIO>
 
 **Tempo:** ~<N> min · **Dificuldade:** ▓▓░░░

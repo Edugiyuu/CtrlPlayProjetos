@@ -1,13 +1,3 @@
-<!--
-  TEMPLATE — GABARITO. Arquivo do PROFESSOR. Nunca vai pro aluno.
-
-  REGRA: mostre o ARQUIVO INTEIRO de como tem que ficar, etapa por etapa.
-  Nada de fragmento solto — na hora da aula você não quer ficar montando
-  o quebra-cabeça mentalmente. Diga sempre QUAL arquivo mudou e QUAL não.
-
-  Apague este comentário depois de preencher.
--->
-
 # Gabarito do DESAFIO.md — para o professor
 
 Cada parte abaixo mostra **os arquivos inteiros**, no estado em que devem

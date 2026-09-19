@@ -1,19 +1,3 @@
-<!--
-  TEMPLATE — CARTÃO DE MEMÓRIA de aula teórica. Arquivo do ALUNO.
-
-  Numa aula teórica isto é mais importante do que numa prática: é o único
-  artefato que sobra pro aluno consultar depois, já que não tem código.
-
-  Regras:
-  1. UMA definição por conceito, na linguagem que você usou na aula — não
-     copie a definição "oficial" de livro.
-  2. Sempre com o exemplo concreto ao lado. Definição sem exemplo não gruda.
-  3. Cabe numa folha. Se não couber, a aula tinha conceito demais.
-  4. Só "você".
-
-  Se for entregar impresso, apague este comentário e imprima.
--->
-
 # Cartão de memória — <TEMA DA AULA>
 
 > As ideias de hoje, numa folha só. Guarde: a gente vai usar isso nas

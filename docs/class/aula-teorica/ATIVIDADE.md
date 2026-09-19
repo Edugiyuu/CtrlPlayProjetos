@@ -1,24 +1,3 @@
-<!--
-  TEMPLATE — ATIVIDADE de aula teórica. Este arquivo é DO ALUNO.
-
-  Diferença pro DESAFIO da aula prática: aqui o resultado não é código
-  rodando, é um ARTEFATO que mostra entendimento — um desenho, um fluxograma,
-  uma lista de passos, uma explicação escrita.
-
-  Regras:
-  1. NÃO dê a resposta nem meio-caminho dela. Dê o alvo, as regras e o
-     critério de pronto.
-  2. Peça algo VERIFICÁVEL. "Faça um algoritmo" é vago. "Faça um algoritmo de
-     no mínimo 6 passos que outra pessoa consiga seguir sem te perguntar
-     nada" é verificável.
-  3. Sempre tem a etapa "troque com o colega e testem" (ou, em aula
-     particular, "eu sigo o seu ao pé da letra"). É aí que o entendimento
-     aparece.
-  4. Só "você". Nada de turma, rubrica, blocos de tempo.
-
-  Apague este comentário antes de entregar ao aluno.
--->
-
 # Atividade — <NOME CURTO DA ATIVIDADE>
 
 **Tempo:** ~<N> min · **Dificuldade:** ▓▓░░░

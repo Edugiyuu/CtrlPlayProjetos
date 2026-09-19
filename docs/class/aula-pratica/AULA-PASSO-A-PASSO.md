@@ -1,32 +1,3 @@
-<!--
-  TEMPLATE de aula passo a passo — o arquivo OPCIONAL que vai PARA O ALUNO.
-  Só crie quando o aluno vai executar sozinho (assíncrono, casa, adiantado).
-  Numa aula que você dá ao vivo, o ROTEIRO-AULA.md + DESAFIO.md já bastam —
-  neste caso APAGUE este arquivo da pasta da aula.
-
-  Regras de ouro:
-
-  1. O ALUNO ESCREVE O CÓDIGO DO ZERO. NÃO dê código pronto para copiar.
-     Diga O QUE fazer, QUAL ferramenta usar (propriedade, função, tag) e
-     O QUE tem que aparecer na tela. O aluno monta a linha. Exceção:
-     comandos de terminal e boilerplate que não dá pra "deduzir"
-     (ex.: `npm create vite@latest ...`) — esses pode dar literais.
-     O código pronto fica no gabarito/pasta de referência, que é SEU.
-  2. ESCREVA PARA O ALUNO. Só "você". Nada de "registrar progresso",
-     "turma #", divisão de sessões, rubrica. Isso fica no ROTEIRO-AULA.md.
-  3. ESCOPO REALISTA. Estime quanto dá pra fazer e corte pela METADE.
-     (Lição da aula do Miguel, turma #11904: material previa 2h, ele fez ~1/4.)
-  4. MARCO MÍNIMO explícito: o menor resultado que já é "aula cumprida".
-     Tudo depois é bônus, em "Se sobrar tempo".
-  5. PASSOS PEQUENOS. Cada passo: 1 coisa nova + instrução + "Teste agora"
-     concreto (o que o aluno deve ver).
-  6. PONTO DE PARADA no meio: onde você mede o ritmo e decide seguir ou
-     consolidar.
-  7. Sem matéria nova além do pré-requisito real do aluno.
-
-  Apague este comentário inteiro antes de entregar ao aluno.
--->
-
 # Aula passo a passo: <TEMA> — <nome do projeto>
 
 > Nesta aula você vai <resultado em 1 frase, do ponto de vista do aluno>.

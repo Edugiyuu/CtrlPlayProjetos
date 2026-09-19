@@ -1,14 +1,3 @@
-<!--
-  TEMPLATE — GABARITO da atividade teórica. Arquivo do PROFESSOR.
-
-  Em atividade teórica não existe "o" gabarito: existe um EXEMPLO COMPLETO de
-  resposta boa + os critérios que separam "entendeu" de "copiou o formato".
-  Preencha os dois. O exemplo completo é o que te salva quando um aluno
-  empaca e você precisa mostrar "algo assim" sem dar a resposta dele.
-
-  Apague este comentário depois de preencher.
--->
-
 # Gabarito da ATIVIDADE — para o professor
 
 Não existe resposta única. Este arquivo tem: **um exemplo completo** de

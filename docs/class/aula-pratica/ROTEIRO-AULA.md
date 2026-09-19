@@ -1,155 +1,50 @@
-<!--
-  TEMPLATE — ROTEIRO DE AULA PRÁTICA. Este arquivo é SEU (professor).
-  Preencha este arquivo PRIMEIRO: é aqui que a aula é pensada.
+# <TEMA> — aula #<N> · turma #<id> <CÓDIGO>
 
-  Regras (detalhe em docs/class/README.md):
-  1. O aluno escreve o código do zero — aqui pode ter snippet, é seu.
-  2. Estime o escopo e CORTE PELA METADE.
-  3. Marco mínimo explícito + ponto de parada no meio.
-  4. Conceito central = seção própria + exemplo real + pergunta de checagem.
-  5. Pré-requisito real, sem otimismo.
+`bloco <X>h · escopo real ~<Y> min` · <N alunos | particular>
 
-  Apague este comentário inteiro depois de preencher.
--->
+**Sai de:** <onde ele está> → **chega em:** <onde ele termina>
+**Já tem:** <pré-requisito REAL, sem otimismo> · **Novo hoje:** <1–3 coisas>
+**Fora hoje:** <o que você corta> → aula #<N+1>
+**Abre com:** "<a pergunta que cria a necessidade do conteúdo de hoje>"
 
-# Roteiro de Aula: <TEMA>
+## Blocos
 
-## Dados
+| Min | O quê | Teste na tela |
+|----:|---|---|
+| 0–10 | Recap: <2 perguntas da aula anterior> | ele responde sem olhar o código |
+| 10–<M> | <bloco 1> | <o que aparece, com valor concreto> |
+| <M>–<P> | <bloco 2> | <...> |
+| **✅ <P>** | **MARCO MÍNIMO — daqui pra baixo é bônus** | <...> |
+| <P>–<Q> | <bônus, só se veio tranquilo> | <...> |
+| <Q>+ | [DESAFIO.md](./DESAFIO.md) — ele sozinho, você só destrava | <...> |
 
-- **Turma alvo:** #<id> — <CÓDIGO> (aula #<N>)
-- **Formato:** <turma de N alunos | aula particular (1 aluno)>
-- **Projeto:** <nome do projeto>
-- **Duração:** bloco de ~<X>h, mas **escopo real ~<Y> min** + folga
-- **Pré-requisito real:** <o que ele JÁ fez, não o que o cronograma assume.
-  Ex.: "aula #5 até props — criou um componente e passou props na mão.
-  Assumir que props ainda está fresco, não dominado.">
-- **Tema:** <por que este tema; se foi trocado, dizer por quê>
+**Atrasou?** corta <bloco sacrificável>. Nunca corta <bloco do marco>.
+Meio perdido no marco? **para ali**, revisa, resto abre a próxima aula.
 
-## Objetivo
+## Conceitos
 
-<1 parágrafo, do ponto de vista do resultado: de onde o aluno sai e onde ele
-chega. Ex.: "Sair de 'escrevi 3 cards na mão' para 'tenho um array e o React
-desenha um card para cada item'.">
+Cada termo abaixo ganha momento próprio: definição isolada → exemplo com os
+dados reais do projeto → checagem. Rodar o código não é prova de entendimento.
 
-## O que NÃO entra nesta aula
-
-<Liste explicitamente o que você vai cortar e por quê. Isso é tão importante
-quanto o que entra — evita você se empolgar no meio da aula.
-Ex.: "useState, eventos, spread, imutabilidade. Isso é a aula #7. Se ele
-perguntar 'e pra mudar clicando?', a resposta é 'é exatamente a próxima aula'.">
-
-## Conceitos da aula
-
-| Conceito | Definição curta (dar explícita, não de passagem) | Onde aparece |
-|----------|--------------------------------------------------|--------------|
-| <conceito> | <1 frase sem jargão> | <arquivo / linha> |
-| | | |
-
-> Todo conceito desta tabela que aparece no **Objetivo** ou no **Marco mínimo**
-> precisa de um momento próprio na aula: definição isolada + exemplo com os
-> dados reais do projeto + pergunta de checagem antes de avançar.
-> Rodar o código com sucesso **não** é prova de entendimento.
-
-## Preparação (antes do aluno chegar)
-
-- [ ] <projeto aberto / servidor rodando / navegador na aba certa>
-- [ ] <instalação necessária, se houver>
-- [ ] <gabarito aberto numa aba só sua>
-
----
-
-## Roteiro
-
-### 0–<N> min — Recap e abertura
-
-Perguntas de aquecimento (ele responde com as próprias palavras — não aceitar
-"sei lá"):
-
-1. <pergunta sobre a aula anterior>
-2. <pergunta sobre a aula anterior>
-
-**Pergunta que abre a aula:** <a pergunta que cria a necessidade do conteúdo
-de hoje. Ex.: "e se a loja tivesse 50 produtos? você escreveria 50 cards na
-mão?">
-
-### <N>–<M> min — <primeiro bloco>
-
-- <o que fazer, em bullets>
-- <o que explicar>
-
-Snippet de referência (professor — **não** mostrar pronto pro aluno):
-
-```<linguagem>
-<código>
-```
-
-**Teste de entendimento:** <pergunta> (resposta boa: <...>)
-
-### <M>–<P> min — <segundo bloco>
-
-- <...>
-
-**Teste agora:** <o que tem que aparecer na tela>
-
----
-
-### ✅ PONTO DE PARADA / MARCO MÍNIMO (~<N> min)
-
-Se chegou aqui, **a aula valeu**. O aluno consegue:
-
-- [ ] <capacidade concreta 1>
-- [ ] <capacidade concreta 2>
-- [ ] <capacidade concreta 3>
-
-Se o ritmo estiver apertado ou ele meio perdido: **para aqui**, revisa, e o
-resto vira abertura da próxima aula. Não empurrar.
-
----
-
-### <P>–<Q> min — <bloco bônus, só se o marco veio tranquilo>
-
-- <...>
-
-**Teste agora:** <resultado observável>
-
-### <Q> min+ — Desafio
-
-Passar o [DESAFIO.md](./DESAFIO.md). Ele faz sozinho, você só destrava.
-Serve pra você ver se <conceito 1> + <conceito 2> ficaram de pé.
-
----
-
-## Perguntas para conduzir a aula
-
-<Perguntas abertas para você jogar no meio da aula e medir entendimento.>
-
-1. <pergunta>
-2. <pergunta>
-3. <pergunta>
-
-## Desafios se sobrar tempo (além do DESAFIO.md)
-
-1. <extra pequeno>
-2. <extra pequeno>
-3. <extra pequeno>
+| Termo | Em 1 frase, sem jargão | ✋ Checagem (resposta boa) |
+|---|---|---|
+| `<termo>` | <...> | "<pergunta>" (<resposta boa>) |
+| `<termo>` | <...> | "<pergunta>" (<resposta boa>) |
 
 ## Erros comuns
 
-| Sintoma | Causa provável |
-|---------|----------------|
-| <o que ele vê na tela> | <o que checar> |
-| | |
+| Ele vê | Você checa |
+|---|---|
+| <sintoma na tela / erro literal> | <o quê> |
 
-## Registro pós-aula
+## Antes de começar
 
-Sem editar tabela cansado. **Despejo cru** — o que lembrar, na ordem que
-lembrar:
+- [ ] <projeto aberto, servidor rodando>
+- [ ] <estado esperado do código: fim da aula #N-1>
+- [ ] `gabarito/GABARITO.md` numa aba só sua
 
-- **Até onde chegaram de verdade** (fez o marco mínimo? chegou no bônus? fez
-  o desafio?).
-- **Quem faltou.**
-- **Onde travou** — nominalmente, se der.
-- **O que cortar ou adiantar** na aula #<N+1>.
+---
 
-Desse despejo saem `alunos/progresso/turma-<id>.md` (status, Observações,
-Progresso por Aluno, Resumo Geral, data) e o `README.md` da pasta da turma.
+Código pronto: [`gabarito/`](./gabarito/) · Extras: fim do `DESAFIO.md`
+Pós-aula: **despejo cru** (até onde chegou, quem faltou, onde travou, o que
+muda na #<N+1>) → [WORKFLOW-AULAS.md](../../../alunos/WORKFLOW-AULAS.md)
