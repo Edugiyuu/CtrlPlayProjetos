@@ -4,7 +4,7 @@
 
 **Sai de:** "memória é uma coisa mágica lá dentro" → **chega em:** o nome é uma **seta**, a caixa é outra coisa — e duas setas podem apontar pra mesma
 **Já tem:** `for`, `if`, variável, lista, `import`, `def` com parâmetro (#8) · **Não tem:** `return`
-**Formato:** você explica no **board CS50** (projetor), depois roda **um script curto** em Python. Board → tela, três vezes, e um desafio no fim.
+**Formato:** você explica no **board CS50** (projetor), depois roda **um script curto** em Python. Board → tela, quatro vezes, e eles fecham com o desafio da playlist.
 **Fora:** bytes por tipo, ponteiro, busca binária, `sys.getsizeof`, compilação, `return`
 **Abre com:** a foto do pente de memória no board. "Alguém sabe o que é isso? Já viu por dentro do PC?"
 
@@ -18,9 +18,9 @@
 | 35–45 | Rode. Cada um compara com o próprio papel. **Desenho 2** na lousa + o **Eduardo/Edu** | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]` |
 | **✅ 45** | **MARCO MÍNIMO — daqui pra baixo é bônus** | ele aponta o `e a mesma caixa? True` e diz "é uma caixa só, com duas setas" |
 | 45–55 | Na lousa: como faz uma caixa **nova**? **Desenho 3**, ao lado do 2 | [`3-conserto.py`](./gabarito/3-conserto.py) → `e a mesma caixa? False`, `lista3` intacta |
-| 55–70 | **Desafio:** palpite no papel dos **dois** `print` da `lista1`, depois roda. Feche com o **desenho 4** | [`4-desafio.py`](./gabarito/4-desafio.py) → `lista1` pega o 4, mas **não** vira `[9, 9, 9]` |
-| 70–80 | Cada um escreve 4 linhas: cria lista, aponta outro nome pra ela, muda por um nome, imprime os dois | os dois `print` saindo iguais |
-| 80–90 | **Galeria:** cada um mostra a tela e responde "quantas caixas tem aí?" | 4 telas, "uma só" nas 3 primeiras |
+| 55–65 | Palpite no papel dos **dois** `print` da `lista1`, depois roda. **Desenho 4**, um passo por vez | [`4-pula-ou-muda.py`](./gabarito/4-pula-ou-muda.py) → `lista1` pega o 4, mas **não** vira `[9, 9, 9]` |
+| 65–80 | **VOCÊ FAZ:** [DESAFIO.md](./DESAFIO.md) — a playlist emprestada, no [`playlist.py`](./playlist.py). Você só destrava | passo 2 com a `minha` em 3 músicas e `is` dando `False` |
+| 80–90 | **Galeria:** cada um roda o `playlist.py` do vizinho e aponta a linha que fez caixa nova | 4 telas, cada um acha o `list(...)` do outro |
 
 **Atrasou?** encurta o 10–25 e vai direto pro palpite. **Nunca corta o 25–45.**
 **Perdido no marco?** aponte a seta da lousa e rode o script 2 de novo, junto.
@@ -100,7 +100,7 @@ com dois nomes. Estranho seria o Eduardo continuar cabeludo.
 > Deixe o desenho 2 na lousa ao lado deste. A diferença inteira da aula está em
 > olhar os dois juntos: **duas setas numa caixa** contra **duas caixas**.
 
-### 4. Desafio: a seta pula ou a caixa muda? · com o script 4
+### 4. A seta pula ou a caixa muda? · com o script 4
 
 ```
    PASSO 1 · lista2 = lista1
@@ -130,7 +130,7 @@ com dois nomes. Estranho seria o Eduardo continuar cabeludo.
                   └───────────┘       pra uma caixa nova.
 ```
 
-> **A regra que o desafio testa:** `append` mexe **dentro** da caixa — quem aponta pra ela
+> **A regra que o script 4 mostra:** `append` mexe **dentro** da caixa — quem aponta pra ela
 > vê. `=` faz a **seta pular** — a caixa antiga não é tocada. É a mesma coisa do script 1
 > (a seta do `a` pulou), só que agora com lista.
 >
@@ -162,7 +162,8 @@ com dois nomes. Estranho seria o Eduardo continuar cabeludo.
 | o número da caixa muda toda vez que roda | normal — diga **antes** de rodar. Ninguém precisa ler nem decorar o número |
 | a `lista1` **não** mudou | ele escreveu `lista2 = list(lista1)` — olhou o script 3 antes do 2 |
 | **"mas você disse que ia mexer só na `lista2`!"** | é a armadilha, e é o ponto da aula: não dá pra mexer "só na `lista2`", porque ela não é uma lista própria. Uma caixa, dois nomes. Aponte os dois `id` iguais |
-| palpite do desafio: "a `lista1` vira `[9, 9, 9]`" | é o erro esperado — ele achou que `=` mexe na caixa, igual ao `append`. Mostre o **passo 3** do desenho 4: a seta pulou, a caixa velha ficou |
+| palpite do script 4: "a `lista1` vira `[9, 9, 9]`" | é o erro esperado — ele achou que `=` mexe na caixa, igual ao `append`. Mostre o **passo 3** do desenho 4: a seta pulou, a caixa velha ficou |
+| no desafio, as duas playlists mudam no passo 2 | escreveu `amigo = minha` de novo, ou não reescreveu a `minha` (ainda estragada do passo 1) |
 | "então lista é tudo igual?" | não — `lista3` e `lista4` do script 3 dão `False`. Rode os dois lado a lado |
 | "o número dele é diferente do meu" | cada máquina guarda onde quiser. Só vale comparar **dentro** da mesma tela |
 | `NameError: name 'lista1' is not defined` | rodou o arquivo errado, ou não salvou |
@@ -170,11 +171,11 @@ com dois nomes. Estranho seria o Eduardo continuar cabeludo.
 ## Antes de começar
 
 - [ ] Board **CS50** no projetor, já na foto do pente e na grade de células
-- [ ] Os 4 scripts do [`gabarito/`](./gabarito/) copiados pras 4 máquinas **antes** da aula
+- [ ] Os 4 scripts do [`gabarito/`](./gabarito/) **e o [`playlist.py`](./playlist.py)** copiados pras 4 máquinas **antes** da aula — o `desafio-playlist.py` **não** (é a resposta)
 - [ ] Papel e caneta em cada mesa — o palpite do bloco 25–35 é escrito à mão
 - [ ] [`CARTAO-DE-MEMORIA.md`](./CARTAO-DE-MEMORIA.md) impresso, 1 por aluno
 - [ ] Lousa livre pro desenho da seta, que fica lá a aula inteira
 
 ---
 
-Código pronto: [`gabarito/`](./gabarito/)
+Código pronto: [`gabarito/`](./gabarito/) · resposta do desafio: [`gabarito/desafio-playlist.py`](./gabarito/desafio-playlist.py)

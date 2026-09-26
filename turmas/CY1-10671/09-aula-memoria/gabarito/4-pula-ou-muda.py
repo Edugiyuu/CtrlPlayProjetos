@@ -1,4 +1,4 @@
-# Desafio: a seta PULA ou a caixa MUDA?
+# A seta PULA ou a caixa MUDA?
 #
 # Antes de rodar, escreva no papel o que sai nos DOIS print da lista1.
 

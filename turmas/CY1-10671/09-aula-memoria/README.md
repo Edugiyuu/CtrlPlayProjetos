@@ -16,7 +16,7 @@ numerada. O resto é Python.
 
 ## Escopo
 
-**Dentro:** caixa · nome como **seta** · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia · `append` muda a caixa, `=` pula a seta (desafio)
+**Dentro:** caixa · nome como **seta** · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia · `append` muda a caixa, `=` pula a seta
 
 **Fora:** `sys.getsizeof` e bytes por tipo · busca linear e binária · ponteiro ·
 compilação · `return` · mutável vs imutável como termo (o desafio mostra a ideia sem dar o nome)
@@ -47,7 +47,10 @@ com ela na lousa, o `lista2 = lista1` deixa de ser choque e vira consequência.
 | [gabarito/1-onde-mora.py](./gabarito/1-onde-mora.py) | O número da caixa · `is` |
 | [gabarito/2-duas-setas.py](./gabarito/2-duas-setas.py) | O bug: mexe numa, muda a outra |
 | [gabarito/3-conserto.py](./gabarito/3-conserto.py) | `list()` faz caixa nova |
-| [gabarito/4-desafio.py](./gabarito/4-desafio.py) | Desafio: `append` muda a caixa, `=` faz a seta pular. Bônus, depois do marco |
+| [gabarito/4-pula-ou-muda.py](./gabarito/4-pula-ou-muda.py) | `append` muda a caixa, `=` faz a seta pular |
+| [DESAFIO.md](./DESAFIO.md) | O desafio: a playlist emprestada — eles causam o bug, consertam, e testam o pula-ou-muda |
+| [playlist.py](./playlist.py) | Arquivo do aluno pro desafio, com a playlist e os comentários de cada passo |
+| [gabarito/desafio-playlist.py](./gabarito/desafio-playlist.py) | Resposta do desafio — **não** copiar pras máquinas deles |
 
 ## Marco mínimo
 
