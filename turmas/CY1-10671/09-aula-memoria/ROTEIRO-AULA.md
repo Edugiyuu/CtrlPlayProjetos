@@ -61,4 +61,4 @@
 
 ---
 
-Código pronto: [`gabarito/`](./gabarito/) · Busca linear/binária ficou em [`guardado-pra-10/`](./guardado-pra-10/)
+Código pronto: [`gabarito/`](./gabarito/)

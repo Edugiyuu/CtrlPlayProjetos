@@ -25,6 +25,9 @@ Esta aula já foi maior. Tinha busca binária com lacunas e contagem de bytes, e
 demais pra esta turma — que ainda não fechou `def` com parâmetro. O que sobrou é
 uma ideia só, mostrada três vezes.
 
+> **Busca binária não é pra esta turma**, nem hoje nem na #10. Foi escrita e
+> descartada; se algum dia fizer sentido, está no commit `e0064cd`.
+
 ## Arquivos
 
 | Arquivo | Pra quê |
@@ -34,7 +37,6 @@ uma ideia só, mostrada três vezes.
 | [gabarito/1-onde-mora.py](./gabarito/1-onde-mora.py) | O número da caixa · `is` |
 | [gabarito/2-duas-etiquetas.py](./gabarito/2-duas-etiquetas.py) | O bug: mexe numa, muda a outra |
 | [gabarito/3-conserto.py](./gabarito/3-conserto.py) | `list()` faz caixa nova |
-| [guardado-pra-10/](./guardado-pra-10/) | Busca linear e binária, prontas — não usar hoje |
 
 ## Marco mínimo
 
