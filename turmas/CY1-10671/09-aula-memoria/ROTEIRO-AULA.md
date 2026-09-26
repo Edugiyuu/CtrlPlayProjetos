@@ -14,10 +14,10 @@
 |----:|---|---|
 | 0–10 | Foto do pente. É peça física, cheia de casinhas. Cada uma guarda **uma** coisa e tem um **número** | — |
 | 10–25 | A grade de células numeradas: o computador não acha nada por nome, só pelo número. **Desenhe a seta na lousa** (abaixo) | [`1-onde-mora.py`](./gabarito/1-onde-mora.py) → `6` e `5` em caixas diferentes; troca o `a` pra 5 e **a seta pula pra caixa do `b`** |
-| 25–35 | Duas setas na **mesma** célula: "isso pode?" Escreva `lista2 = lista1` na lousa e pergunte o que sai no `lista1` depois do `append`. **Todos escrevem o palpite no papel** | — (ainda **não** rode) |
-| 35–45 | Rode. Cada um compara com o próprio papel. Feche com o **Eduardo/Edu** (abaixo) | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]` |
+| 25–35 | Duas setas na **mesma** célula: "isso pode?" Desenhe o **ANTES do desenho 2** na lousa e pergunte o que sai no `lista1` depois do `append`. **Todos escrevem o palpite no papel** | — (ainda **não** rode) |
+| 35–45 | Rode. Cada um compara com o próprio papel. **Desenho 2** na lousa + o **Eduardo/Edu** | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]` |
 | **✅ 45** | **MARCO MÍNIMO — daqui pra baixo é bônus** | ele aponta o `e a mesma caixa? True` e diz "é uma caixa só, com duas setas" |
-| 45–60 | Na lousa: como faz uma caixa **nova**? | [`3-conserto.py`](./gabarito/3-conserto.py) → `e a mesma caixa? False`, `lista3` intacta |
+| 45–60 | Na lousa: como faz uma caixa **nova**? **Desenho 3**, ao lado do 2 | [`3-conserto.py`](./gabarito/3-conserto.py) → `e a mesma caixa? False`, `lista3` intacta |
 | 60–75 | Cada um escreve 4 linhas: cria lista, aponta outro nome pra ela, muda por um nome, imprime os dois | os dois `print` saindo iguais |
 | 75–90 | **Galeria:** cada um mostra a tela e responde "quantas caixas tem aí?" | 4 telas, "uma só" nas 3 primeiras |
 
@@ -38,14 +38,8 @@ turma leva a pancada se você desenhar a grade e rodar o script logo depois.
 | casinhas numeradas, enfileiradas, de tamanho fixo | a tabela de bytes por tipo (`int` 4, `char` 1...) |
 | achar por número, não por nome | qualquer coisa com ponteiro ou `&` |
 
-**Desenhe na lousa antes do script 1** e deixe lá a aula inteira:
-
-```
-   a ──────┐
-           ├──→ ┌───────┐     o nome e uma SETA.
-   b ──────┘    │   5   │     a caixa e outra coisa,
-                └───────┘     e mora em outro lugar.
-```
+Os desenhos pra copiar na lousa estão em **[Desenhos pra lousa](#desenhos-pra-lousa)**,
+logo abaixo. O nº 1 vai na lousa **antes do script 1** e fica lá a aula inteira.
 
 Com a seta na lousa desde o minuto 10, o `lista2 = lista1` deixa de ser choque e vira
 consequência: duas setas, uma caixa.
@@ -57,6 +51,53 @@ com dois nomes. Estranho seria o Eduardo continuar cabeludo.
 
 > **`id(a)` não mostra onde o `a` mora — mostra onde mora o valor pra onde o `a` aponta.**
 > Em Python não dá pra perguntar onde a variável está. Se perguntarem, é essa a resposta.
+
+## Desenhos pra lousa
+
+### 1. O nome é uma seta — antes do script 1, e fica a aula inteira
+
+```
+   a ──────┐
+           ├──→ ┌───────┐     o nome e uma SETA.
+   b ──────┘    │   5   │     a caixa e outra coisa,
+                └───────┘     e mora em outro lugar.
+```
+
+### 2. `lista2 = lista1` — uma caixa só · ANTES no bloco 25–35, DEPOIS no 35–45
+
+```
+   ANTES                            DEPOIS do lista2.append(4)
+
+   lista1 ──┐                       lista1 ──┐
+            ├──→ ┌───────────┐               ├──→ ┌──────────────┐
+   lista2 ──┘    │ [1, 2, 3] │      lista2 ──┘    │ [1, 2, 3, 4] │
+                 └───────────┘                    └──────────────┘
+
+   uma caixa, duas setas            a caixa mudou POR DENTRO.
+                                    os dois nomes veem a mudanca.
+```
+
+> Desenhe o **ANTES** com eles, antes de rodar. Depois de rodar, desenhe o **DEPOIS**
+> ao lado e pergunte: **"quantas caixas tem no desenho?"** A resposta "uma" é o marco.
+
+### 3. `lista4 = list(lista3)` — duas caixas · com o script 3
+
+```
+   ANTES                            DEPOIS do lista4.append(4)
+
+   lista3 ──→ ┌───────────┐         lista3 ──→ ┌───────────┐
+              │ [1, 2, 3] │                    │ [1, 2, 3] │  intacta
+              └───────────┘                    └───────────┘
+
+   lista4 ──→ ┌───────────┐         lista4 ──→ ┌──────────────┐
+              │ [1, 2, 3] │                    │ [1, 2, 3, 4] │
+              └───────────┘                    └──────────────┘
+
+   list() fez uma caixa NOVA        mexer numa nao toca na outra
+```
+
+> Deixe o desenho 2 na lousa ao lado deste. A diferença inteira da aula está em
+> olhar os dois juntos: **duas setas numa caixa** contra **duas caixas**.
 
 ## Conceitos
 
