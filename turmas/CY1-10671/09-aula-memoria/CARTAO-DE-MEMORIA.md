@@ -9,8 +9,27 @@
 
 1. A memória do computador é uma prateleira gigante de **caixas numeradas**.
 2. O computador não acha nada por nome — ele só sabe ir até o **número** da caixa.
-3. O nome que você inventa (`idade`, `lista1`) é só uma **etiqueta amarrada** na caixa.
-   A etiqueta não é a caixa.
+3. O nome que você inventa (`idade`, `lista1`) **não é a caixa**. É uma **seta**
+   apontando pra ela. A caixa mora em outro lugar.
+
+```
+   a ──────┐
+           ├──→ ┌───────┐     o nome e uma SETA.
+   b ──────┘    │   5   │     a caixa e outra coisa.
+                └───────┘
+```
+
+Duas setas podem apontar pra mesma caixa. É disso que trata a aula toda.
+
+---
+
+## A caixa é do valor, não do nome
+
+| Situação | Quantas caixas |
+|---|---|
+| `a = 6` e `b = 5` | **duas** — valores diferentes, sempre caixas diferentes |
+| `a = 5` e `b = 5` | pode ser **uma só** — o Python reaproveita quando o valor não muda |
+| você troca o valor de `a` | a caixa não muda: **a seta é que pula** pra outra caixa |
 
 ---
 
@@ -18,7 +37,7 @@
 
 ### `id(coisa)`
 
-Mostra o número da caixa onde a coisa está guardada.
+Mostra o número da caixa **pra onde a seta aponta** — não onde o nome mora.
 
 ```python
 a = 5
@@ -62,7 +81,7 @@ print(x is y)    # False  — duas caixas diferentes
 
 ### `lista2 = lista1` **não** faz uma cópia
 
-Só amarra uma **segunda etiqueta na mesma caixa**.
+Só faz uma **segunda seta apontar pra mesma caixa**.
 
 ```python
 lista1 = [1, 2, 3]
@@ -94,5 +113,5 @@ print(lista1 is lista2)
 
 | Resposta | O que significa |
 |---|---|
-| `True` | uma caixa só, duas etiquetas. Mexer numa mexe na outra |
+| `True` | uma caixa só, duas setas. Mexer por um nome mexe no outro |
 | `False` | duas caixas de verdade. Uma não afeta a outra |

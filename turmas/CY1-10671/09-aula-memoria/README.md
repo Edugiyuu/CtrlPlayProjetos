@@ -16,7 +16,7 @@ numerada. O resto é Python.
 
 ## Escopo
 
-**Dentro:** caixa · etiqueta · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia
+**Dentro:** caixa · nome como **seta** · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia
 
 **Fora:** `sys.getsizeof` e bytes por tipo · busca linear e binária · ponteiro ·
 compilação · `return` · mutável vs imutável (é o gancho da próxima)
@@ -28,6 +28,16 @@ uma ideia só, mostrada três vezes.
 > **Busca binária não é pra esta turma**, nem hoje nem na #10. Foi escrita e
 > descartada; se algum dia fizer sentido, está no commit `e0064cd`.
 
+## A armadilha do board
+
+O board é C, e em C **o nome é a caixa**: `int a = 5; int b = 5;` reserva duas, sempre.
+Em Python **o nome é uma seta** pra uma caixa que vive em outro lugar, e `id()` mostra a
+caixa — nunca onde o nome mora. Nesse ponto o board e a tela **discordam**.
+
+O roteiro tem a tabela de o-que-usar-e-o-que-não do board, mais o desenho da seta pra
+copiar na lousa. Desenhe a seta **antes** de rodar o script 1 e deixe lá a aula inteira:
+com ela na lousa, o `lista2 = lista1` deixa de ser choque e vira consequência.
+
 ## Arquivos
 
 | Arquivo | Pra quê |
@@ -35,16 +45,16 @@ uma ideia só, mostrada três vezes.
 | [ROTEIRO-AULA.md](./ROTEIRO-AULA.md) | O painel: board de um lado, tela do outro |
 | [CARTAO-DE-MEMORIA.md](./CARTAO-DE-MEMORIA.md) | Consulta do aluno — imprimir 1 por aluno |
 | [gabarito/1-onde-mora.py](./gabarito/1-onde-mora.py) | O número da caixa · `is` |
-| [gabarito/2-duas-etiquetas.py](./gabarito/2-duas-etiquetas.py) | O bug: mexe numa, muda a outra |
+| [gabarito/2-duas-setas.py](./gabarito/2-duas-setas.py) | O bug: mexe numa, muda a outra |
 | [gabarito/3-conserto.py](./gabarito/3-conserto.py) | `list()` faz caixa nova |
 
 ## Marco mínimo
 
-Ele aponta os dois números de caixa iguais na tela e diz
-**"é uma caixa só, com dois nomes"**. Minuto 45. Tudo depois é bônus.
+Ele aponta o `e a mesma caixa? True` na tela e diz
+**"é uma caixa só, com duas setas"**. Minuto 45. Tudo depois é bônus.
 
 ## O momento que carrega a aula
 
-Minuto 30: antes de rodar o `2-duas-etiquetas.py`, todo mundo escreve no papel o
+Minuto 30: antes de rodar o `2-duas-setas.py`, todo mundo escreve no papel o
 que acha que vai sair no `lista1`. Todos vão escrever `[1, 2, 3]`. Sai `[1, 2, 3, 4]`.
 O palpite escrito à mão é o que separa quem entendeu de quem colou da IA.

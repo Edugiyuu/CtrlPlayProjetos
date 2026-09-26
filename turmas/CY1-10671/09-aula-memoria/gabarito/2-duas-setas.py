@@ -1,4 +1,4 @@
-# O nome e so uma etiqueta pendurada na caixa
+# O nome e so uma SETA apontando pra caixa
 
 lista1 = [1, 2, 3]
 lista2 = lista1
