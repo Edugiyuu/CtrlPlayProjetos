@@ -1,4 +1,7 @@
 # Como fazer uma caixa NOVA de verdade
+#
+# list(lista3) copia o conteudo pra uma caixa nova.
+# Agora sao duas listas de verdade: mexer numa nao mexe na outra.
 
 lista3 = [1, 2, 3]
 lista4 = list(lista3)

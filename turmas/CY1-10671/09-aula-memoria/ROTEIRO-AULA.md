@@ -15,7 +15,7 @@
 | 0–10 | Foto do pente. É peça física, cheia de casinhas. Cada uma guarda **uma** coisa e tem um **número** | — |
 | 10–25 | A grade de células numeradas: o computador não acha nada por nome, só pelo número. **Desenhe a seta na lousa** (abaixo) | [`1-onde-mora.py`](./gabarito/1-onde-mora.py) → `6` e `5` em caixas diferentes; troca o `a` pra 5 e **a seta pula pra caixa do `b`** |
 | 25–35 | Duas setas na **mesma** célula: "isso pode?" Escreva `lista2 = lista1` na lousa e pergunte o que sai no `lista1` depois do `append`. **Todos escrevem o palpite no papel** | — (ainda **não** rode) |
-| 35–45 | Rode. Cada um compara com o próprio papel. Feche com o **Eduardo/Edu** (abaixo) | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]`, e o script explica sozinho no fim |
+| 35–45 | Rode. Cada um compara com o próprio papel. Feche com o **Eduardo/Edu** (abaixo) | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]` |
 | **✅ 45** | **MARCO MÍNIMO — daqui pra baixo é bônus** | ele aponta o `e a mesma caixa? True` e diz "é uma caixa só, com duas setas" |
 | 45–60 | Na lousa: como faz uma caixa **nova**? | [`3-conserto.py`](./gabarito/3-conserto.py) → `e a mesma caixa? False`, `lista3` intacta |
 | 60–75 | Cada um escreve 4 linhas: cria lista, aponta outro nome pra ela, muda por um nome, imprime os dois | os dois `print` saindo iguais |
