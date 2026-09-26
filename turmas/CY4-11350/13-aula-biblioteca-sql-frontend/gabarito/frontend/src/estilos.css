@@ -1,0 +1,22 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; display: flex; justify-content: center; }
+main { width: min(680px, 92vw); padding: 24px 0 64px; }
+h1 { margin-bottom: 4px; }
+.sub { margin-top: 0; opacity: .7; font-size: .9rem; }
+.erro { background: #ffe3e3; color: #8a1f1f; padding: 10px 12px; border-radius: 8px; }
+.form input, .form select {
+  padding: 8px; border: 1px solid #bbb; border-radius: 6px; font: inherit;
+}
+.livros { list-style: none; padding: 0; }
+.livros li {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  border: 1px solid #ddd; border-radius: 10px; padding: 12px; margin-bottom: 8px;
+}
+.ano, .genero { opacity: .6; font-size: .85rem; }
+.autor { font-size: .9rem; }
+button { font: inherit; padding: 8px 12px; border-radius: 999px; border: 0; cursor: pointer; }
+button.ok { background: #d8f5d8; color: #1c5c1c; }
+button.fora { background: #f5e2d8; color: #7a3c14; }
+.form { display: grid; gap: 8px; margin-top: 32px; border-top: 1px solid #ddd; padding-top: 16px; }
+.form button { background: #2f6feb; color: #fff; justify-self: start; padding: 10px 18px; }
+.msg { font-size: .9rem; opacity: .8; }

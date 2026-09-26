@@ -4,3 +4,4 @@
 __pycache__/
 alunos/progresso/
 node_modules/
+*.sqlite

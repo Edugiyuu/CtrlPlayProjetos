@@ -1,33 +1,40 @@
 # Aula #13: Unindo Backend (SQL) e Frontend (Benício, Caio, Nicolas)
 
-## Objetivo
-Criar uma tela React simples que consome a API da Biblioteca Digital
-(listar livros, mostrar autor de cada um) e faz login usando o cookie
-httpOnly da aula #12.
+Tela React que consome a API da Biblioteca Digital (Express + SQLite) rodando
+na mesma máquina, em outra porta.
+
+| Arquivo | Para quem |
+|---|---|
+| [ROTEIRO-AULA.md](ROTEIRO-AULA.md) | você, durante a aula: blocos, conceitos, erros comuns |
+| [gabarito/](gabarito/) | você, antes da aula: os dois projetos prontos e testados |
 
 ## O que a turma pratica
 - Configurar **CORS** no backend para aceitar requisições do front.
-- Consumir uma API com `fetch`/`axios` e cookies (`credentials`/`withCredentials`).
+- Consumir a API com `fetch` dentro de `useEffect`.
 - Renderizar uma lista vinda da API em componentes React.
-- Fazer login pelo front e usar o resultado (usuário autenticado) na tela.
+- Cadastrar pelo front com formulário controlado (`POST`).
 
 ## Pré-requisito real
-Turma já sabe React básico (componentes, props, estado) e já tem a API de
-livros + login por cookie funcionando (aulas #7 a #12). **Consumir API com
-cookies entre origens diferentes é novidade hoje.**
+React básico (componentes, props, estado) e a API de livros funcionando
+(aulas #7–#9). **Duas origens conversando é a novidade de hoje.**
 
 ## Como rodar
-Dois projetos rodando ao mesmo tempo: o backend Express (biblioteca) numa
-porta, e um novo projeto React (Vite) noutra.
+Dois projetos ao mesmo tempo, em terminais separados: o backend na porta 3000
+e o front na 5173.
 
 ```bash
 npm install cors        # no backend
 npm create vite@latest biblioteca-front -- --template react
 ```
 
-1. Seguir o [ROTEIRO-AULA.md](ROTEIRO-AULA.md).
-2. Rodar o backend (`npm run dev`) e o front (`npm run dev` dentro de
-   `biblioteca-front`) ao mesmo tempo, em terminais separados.
+O gabarito já vem com os dois montados — ver
+[gabarito/README.md](gabarito/README.md) para a estrutura de pastas, as rotas
+e como o banco é populado.
 
 ## Marco mínimo da aula
 A tela React lista os livros vindos da API (título + nome do autor).
+
+## Fora do escopo hoje
+**Login.** Depende do JWT e do cookie httpOnly das aulas #10–#12. O gabarito
+já deixa o CORS com `credentials: true` e o front mandando
+`credentials: 'include'`, então o login encaixa depois sem refazer nada.
