@@ -16,10 +16,10 @@ numerada. O resto é Python.
 
 ## Escopo
 
-**Dentro:** caixa · nome como **seta** · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia
+**Dentro:** caixa · nome como **seta** · `id()` · `is` · `lista2 = lista1` não copia · `list()` copia · `append` muda a caixa, `=` pula a seta (desafio)
 
 **Fora:** `sys.getsizeof` e bytes por tipo · busca linear e binária · ponteiro ·
-compilação · `return` · mutável vs imutável (é o gancho da próxima)
+compilação · `return` · mutável vs imutável como termo (o desafio mostra a ideia sem dar o nome)
 
 Esta aula já foi maior. Tinha busca binária com lacunas e contagem de bytes, e era
 demais pra esta turma — que ainda não fechou `def` com parâmetro. O que sobrou é
@@ -47,6 +47,7 @@ com ela na lousa, o `lista2 = lista1` deixa de ser choque e vira consequência.
 | [gabarito/1-onde-mora.py](./gabarito/1-onde-mora.py) | O número da caixa · `is` |
 | [gabarito/2-duas-setas.py](./gabarito/2-duas-setas.py) | O bug: mexe numa, muda a outra |
 | [gabarito/3-conserto.py](./gabarito/3-conserto.py) | `list()` faz caixa nova |
+| [gabarito/4-desafio.py](./gabarito/4-desafio.py) | Desafio: `append` muda a caixa, `=` faz a seta pular. Bônus, depois do marco |
 
 ## Marco mínimo
 
