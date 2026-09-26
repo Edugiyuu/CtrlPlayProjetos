@@ -37,9 +37,9 @@ Ele só existe pra provar que o valor mora em algum lugar de verdade.
 ### `is`
 
 ```python
-a = 5
-b = 5
-print(a is b)    # True — os dois 5 moram na mesma caixa
+lista1 = [1, 2, 3]
+lista2 = lista1
+print(lista1 is lista2)    # True — é uma caixa só, com dois nomes
 ```
 
 | Você escreve | A pergunta que isso faz |

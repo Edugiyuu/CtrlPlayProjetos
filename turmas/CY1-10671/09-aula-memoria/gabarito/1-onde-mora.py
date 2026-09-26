@@ -6,11 +6,13 @@ print("o valor de a e:", a)
 print("a caixa onde ele mora e a numero:", id(a))
 
 print()
+print("agora vou trocar o valor de a para 6...")
+print()
 
-b = 5
+a = 6
 
-print("o valor de b e:", b)
-print("a caixa onde ele mora e a numero:", id(b))
+print("o valor de a e:", a)
+print("a caixa onde ele mora e a numero:", id(a))
 
 print()
-print("a e b estao na MESMA caixa?", a is b)
+print("reparem: o nome 'a' e o mesmo, mas a caixa e OUTRA.")
