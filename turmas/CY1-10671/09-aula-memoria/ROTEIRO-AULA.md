@@ -15,7 +15,7 @@
 | 0–10 | Foto do pente. É peça física, cheia de casinhas. Cada uma guarda **uma** coisa e tem um **número** | — |
 | 10–25 | A grade de células numeradas: o computador não acha nada por nome, só pelo número. **Desenhe a seta na lousa** (abaixo) | [`1-onde-mora.py`](./gabarito/1-onde-mora.py) → `6` e `5` em caixas diferentes; troca o `a` pra 5 e **a seta pula pra caixa do `b`** |
 | 25–35 | Duas setas na **mesma** célula: "isso pode?" Escreva `lista2 = lista1` na lousa e pergunte o que sai no `lista1` depois do `append`. **Todos escrevem o palpite no papel** | — (ainda **não** rode) |
-| 35–45 | Rode. Deixe cada um comparar com o próprio papel | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]` |
+| 35–45 | Rode. Cada um compara com o próprio papel. Feche com o **Eduardo/Edu** (abaixo) | [`2-duas-setas.py`](./gabarito/2-duas-setas.py) → `lista1 = [1, 2, 3, 4]`, e o script explica sozinho no fim |
 | **✅ 45** | **MARCO MÍNIMO — daqui pra baixo é bônus** | ele aponta o `e a mesma caixa? True` e diz "é uma caixa só, com duas setas" |
 | 45–60 | Na lousa: como faz uma caixa **nova**? | [`3-conserto.py`](./gabarito/3-conserto.py) → `e a mesma caixa? False`, `lista3` intacta |
 | 60–75 | Cada um escreve 4 linhas: cria lista, aponta outro nome pra ela, muda por um nome, imprime os dois | os dois `print` saindo iguais |
@@ -50,6 +50,11 @@ turma leva a pancada se você desenhar a grade e rodar o script logo depois.
 Com a seta na lousa desde o minuto 10, o `lista2 = lista1` deixa de ser choque e vira
 consequência: duas setas, uma caixa.
 
+**A frase que resolve, no minuto 45:** *"a `lista1` não copiou nada. Nunca existiram duas
+listas — existe **uma** lista com dois nomes."* Se travarem aí, use **Eduardo / Edu**: se o
+Edu corta o cabelo, o Eduardo está de cabelo curto também. Não é cópia, é a mesma pessoa
+com dois nomes. Estranho seria o Eduardo continuar cabeludo.
+
 > **`id(a)` não mostra onde o `a` mora — mostra onde mora o valor pra onde o `a` aponta.**
 > Em Python não dá pra perguntar onde a variável está. Se perguntarem, é essa a resposta.
 
@@ -77,6 +82,7 @@ consequência: duas setas, uma caixa.
 | "e a caixa do 6, sumiu?" | continua lá, sem ninguém apontando. O Python joga fora depois. **Não abra** isso hoje |
 | o número da caixa muda toda vez que roda | normal — diga **antes** de rodar. Ninguém precisa ler nem decorar o número |
 | a `lista1` **não** mudou | ele escreveu `lista2 = list(lista1)` — olhou o script 3 antes do 2 |
+| **"mas você disse que ia mexer só na `lista2`!"** | é a armadilha, e é o ponto da aula: não dá pra mexer "só na `lista2`", porque ela não é uma lista própria. Uma caixa, dois nomes. Aponte os dois `id` iguais |
 | "então lista é tudo igual?" | não — `lista3` e `lista4` do script 3 dão `False`. Rode os dois lado a lado |
 | "o número dele é diferente do meu" | cada máquina guarda onde quiser. Só vale comparar **dentro** da mesma tela |
 | `NameError: name 'lista1' is not defined` | rodou o arquivo errado, ou não salvou |

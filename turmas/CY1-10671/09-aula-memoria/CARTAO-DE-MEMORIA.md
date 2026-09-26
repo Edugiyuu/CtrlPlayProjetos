@@ -91,6 +91,13 @@ lista2.append(4)         # mexi só na lista2...
 print(lista1)            # [1, 2, 3, 4]  ← a lista1 mudou também!
 ```
 
+**Por que?** Porque a `lista1` não copiou nada. **Nunca existiram duas listas** — existe
+uma lista só, com dois nomes. Não dá pra mexer "só na `lista2`": ela não é uma lista
+própria, é um segundo nome pra mesma caixa.
+
+> Pense em **Eduardo** e **Edu**. Se o Edu corta o cabelo, o Eduardo está de cabelo curto
+> também. Não é cópia — é a mesma pessoa com dois nomes.
+
 ### Pra copiar de verdade: `list()`
 
 ```python
