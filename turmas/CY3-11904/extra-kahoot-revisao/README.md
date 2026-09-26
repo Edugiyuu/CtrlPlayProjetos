@@ -25,7 +25,7 @@ O plano usado (**Kahoot! GO**) **não aceita `.xlsx`** no botão Importar — s�
 `.ppt`, `.pptx`, `.key` e `.pdf` (import de planilha é recurso de plano
 pago). Por isso tem dois arquivos aqui:
 
-- [`kahoot-revisao.pdf`](./kahoot-revisao.pdf) — **use este.** No editor,
+- `kahoot-revisao.pdf` (fica só na máquina, fora do repositório) — **use este.** No editor,
   aba **Gerar** → **PDF para kahoot** (Kahoot! AI), envie o PDF. Cada
   pergunta tem as 4 alternativas e a correta marcada em verde/✔, formatado
   pra IA extrair certo. **Revise as 20 perguntas depois de gerar** — IA pode
