@@ -11,37 +11,48 @@ export default function ListaLivros({ livros, aoAtualizar }) {
   }
 
   return (
-    <ul className="livros">
+    <div className="estante">
       {livros.map((livro) => (
-        <ItemLivro key={livro.id} livro={livro} aoClicar={emprestar} />
+        <CardLivro key={livro.id} livro={livro} aoClicar={emprestar} />
       ))}
-    </ul>
+    </div>
   );
 }
 
-// Um livro da lista. Todo livro tem autor, porque o backend exige o autorId.
-function ItemLivro({ livro, aoClicar }) {
+// Um card por livro. Todo livro tem autor, porque o backend exige o autorId.
+function CardLivro({ livro, aoClicar }) {
   // if normal, antes do return: fica mais facil de ler do que dentro do JSX.
-  let texto = 'Emprestado';
-  let cor = 'fora';
+  let situacao = 'Emprestado';
+  let selo = 'selo fora';
+  let botao = 'Devolver';
 
   if (livro.disponivel) {
-    texto = 'Disponivel';
-    cor = 'ok';
+    situacao = 'Disponivel';
+    selo = 'selo ok';
+    botao = 'Emprestar';
+  }
+
+  // a cor da capa depende do genero
+  let capa = 'capa outro';
+  if (livro.genero === 'Romance') {
+    capa = 'capa romance';
+  }
+  if (livro.genero === 'Fantasia') {
+    capa = 'capa fantasia';
   }
 
   return (
-    <li>
-      <div>
-        <strong>{livro.titulo}</strong> <span className="ano">({livro.ano})</span>
-        <br />
-        <span className="autor">{livro.autor.nome}</span>
-        {' · '}
-        <span className="genero">{livro.genero}</span>
+    <article className="card">
+      <div className={capa}>
+        <strong>{livro.titulo}</strong>
+        <span>{livro.autor.nome}</span>
       </div>
-      <button className={cor} onClick={() => aoClicar(livro.id)}>
-        {texto}
-      </button>
-    </li>
+
+      <div className="info">
+        <p className="detalhe">{livro.genero} · {livro.ano}</p>
+        <p className={selo}>{situacao}</p>
+        <button onClick={() => aoClicar(livro.id)}>{botao}</button>
+      </div>
+    </article>
   );
 }

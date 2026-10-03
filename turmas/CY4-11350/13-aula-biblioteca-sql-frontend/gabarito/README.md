@@ -111,7 +111,7 @@ frontend/
 └── src/
     ├── main.jsx                   monta o React na página
     ├── App.jsx                    busca os livros e guarda a lista no estado
-    ├── ListaLivros.jsx            renderiza a lista (e o ItemLivro, um por linha)
+    ├── ListaLivros.jsx            renderiza a estante (um CardLivro por livro)
     ├── FormNovoLivro.jsx          formulário controlado → POST
     ├── api.js                     todas as chamadas à API, num lugar só
     └── estilos.css
