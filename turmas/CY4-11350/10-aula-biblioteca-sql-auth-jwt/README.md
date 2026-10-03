@@ -25,6 +25,10 @@ npm install bcrypt jsonwebtoken
 1. Seguir o [ROTEIRO-AULA.md](ROTEIRO-AULA.md).
 2. Testar `POST /cadastro` e depois `POST /login`.
 
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
+
 ## Marco mínimo da aula
 Cadastro cria um usuário com senha criptografada no banco; login com a senha
 certa devolve um token JWT; login com senha errada devolve erro.

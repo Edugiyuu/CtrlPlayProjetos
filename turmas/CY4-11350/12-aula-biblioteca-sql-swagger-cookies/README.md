@@ -27,6 +27,10 @@ npm install cookie-parser
 2. Testar login e rota protegida pelo `/api-docs` e pelo Insomnia/Postman
    (com a opção de enviar cookies ativada).
 
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
+
 ## Marco mínimo da aula
 Login devolve o token num cookie httpOnly; uma rota protegida funciona lendo
 o token desse cookie, sem precisar mandar o header `Authorization` manualmente.

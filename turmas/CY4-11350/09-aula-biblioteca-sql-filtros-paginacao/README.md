@@ -23,6 +23,10 @@ Continuação do mesmo projeto Express — sem instalar nada novo.
 2. Testar com URLs como `GET /livros?genero=Fantasia`,
    `GET /livros?pagina=2&limite=3`.
 
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
+
 ## Marco mínimo da aula
 `GET /livros?genero=X` filtra corretamente, e `GET /livros?pagina=N` devolve
 uma página diferente de resultados.

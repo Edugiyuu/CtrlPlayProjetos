@@ -1,0 +1,19 @@
+{
+  "name": "biblioteca-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API da Biblioteca Digital - estado ao fim da aula #9 (filtros e paginacao)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

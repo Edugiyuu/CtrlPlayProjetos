@@ -27,6 +27,10 @@ npm install swagger-ui-express swagger-jsdoc
 1. Seguir o [ROTEIRO-AULA.md](ROTEIRO-AULA.md).
 2. Rodar o servidor e abrir `http://localhost:<porta>/api-docs` no navegador.
 
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
+
 ## Marco mínimo da aula
 As rotas de `livros` (pelo menos `GET` e `POST`) aparecem documentadas em
 `/api-docs` e dá para testá-las direto por lá.

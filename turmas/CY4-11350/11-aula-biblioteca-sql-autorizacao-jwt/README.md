@@ -22,6 +22,10 @@ Continuação do mesmo projeto Express — sem instalar nada novo.
 2. Testar rotas protegidas mandando o header
    `Authorization: Bearer <token>` no Insomnia/Postman.
 
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
+
 ## Marco mínimo da aula
 Uma rota protegida devolve `401` sem token, e funciona normalmente com um
 token válido no header `Authorization`.

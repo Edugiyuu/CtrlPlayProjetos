@@ -41,8 +41,13 @@ npm install sequelize sqlite3
 2. Rodar o servidor como sempre: `npm run dev` (ou `node server.js`).
 3. Testar as rotas no Insomnia/Postman/Thunder Client, como já faziam com o Mongo.
 
-> ⚠️ Não tem projeto pronto nesta pasta de propósito — vocês vão **modificar
-> o projeto que já existe**, trocando a camada de banco de dados.
+> ⚠️ O aluno não parte de projeto pronto: ele **modifica o projeto que já
+> existe**, trocando a camada de banco de dados. A pasta `gabarito/` é
+> material do professor.
+
+## Gabarito (seu, não do aluno)
+Projeto inteiro no estado do fim desta aula, testado: [gabarito/](gabarito/).
+É material de condução — o aluno continua escrevendo o código dele.
 
 ## Marco mínimo da aula
 `GET /livros` e `POST /livros` funcionando contra o SQLite, com o código
