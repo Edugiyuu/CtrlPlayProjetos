@@ -4,16 +4,15 @@ Copie a pasta inteira e preencha os `<...>`.
 
 ```bash
 # aula prática (o aluno programa)
-cp -r docs/class/aula-pratica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula
+cp -r docs/class/aula-pratica niveis/<NÍVEL>/<NN>-nome-da-aula
 
 # aula teórica (o aluno entende e explica)
-cp -r docs/class/aula-teorica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula
+cp -r docs/class/aula-teorica niveis/<NÍVEL>/<NN>-nome-da-aula
 ```
 
 **Na dúvida entre os dois:** se no fim da aula o resultado é "está funcionando
 na tela", é **prática**. Se é "ele consegue me explicar com as próprias
-palavras", é **teórica**. Aula mista usa o template prático + a tabela de
-Conceitos da teórica.
+palavras", é **teórica**. Aula mista usa o template prático.
 
 Exemplos reais: [Placar da Guilda (JS/DOM)](../../turmas/CY2-11342/06-aula-js-placar-guilda/),
 [Catálogo da Loja (React)](../../turmas/CY3-11904/06-aula-react-lista-e-estado/),
@@ -21,37 +20,30 @@ Exemplos reais: [Placar da Guilda (JS/DOM)](../../turmas/CY2-11342/06-aula-js-pl
 
 ---
 
-## A regra do formato: o roteiro é um painel, não um texto
+## Formato: 2 arquivos + gabarito
 
-O `ROTEIRO-AULA.md` é o arquivo que você abre **durante** a aula, com o aluno
-esperando. Ele tem que caber numa tela e ser lido de relance.
+Vale para os dois templates. Na teórica, `ATIVIDADE.md` ocupa o lugar do
+`DESAFIO.md` e pede um artefato **verificável** ("passos que outra pessoa segue
+sem perguntar nada"), sempre com a etapa "troque e teste ao pé da letra".
 
-- **Tabela sempre que couber.** Bloco de tempo, conceito, erro comum: tudo tabela.
-- **Nada de parágrafo.** Objetivo virou "sai de X → chega em Y". "O que não
-  entra" virou uma linha. Se você escreveu 3 linhas corridas, corte.
-- **Snippet de código não vai no roteiro.** Vai no `gabarito/`. Roteiro com
-  bloco de código é roteiro que você não consegue escanear.
-- **Teto:** ~50 linhas na prática, ~80 na teórica. Passou disso, sobrou coisa.
-- O que é planejamento (pensar a aula) cabe no cabeçalho em bullets curtos.
-  O que você não vai olhar durante a aula, não entra.
+```text
+<NN>-nome-da-aula/
+├── README.md      # SEU — abre na aula: blocos, marco, conceitos, erros
+├── DESAFIO.md     # DO ALUNO — comandos de hoje, etapas, check
+└── gabarito/      # SEU — resposta completa
+```
 
----
-
-## Regras por arquivo
+Só isso. Nada de roteiro, cartão ou passo a passo separado.
 
 | Arquivo | Regra que não pode ser quebrada |
 |---|---|
-| `ROTEIRO-AULA.md` | Painel, não texto. Marco mínimo explícito na tabela de blocos. |
-| `README.md` | Só o que o roteiro **não** tem: como rodar, formato, índice. Zero repetição. |
-| `DESAFIO.md` | **Nada de código pronto.** Bullet curto com o alvo + o nome da ferramenta (`.toUpperCase()`, `querySelector`, `.map()`) + "Teste agora" concreto. O aluno monta a linha. Sem "duas formas, escolha uma". Padrão: [`e1-ligar-o-js.md`](../../turmas/CY2-11342/06-aula-js-placar-guilda/desafios/e1-ligar-o-js.md). Desafio grande vira `desafios/e1-*.md`, `e2-*.md`. |
-| `ATIVIDADE.md` | Pede artefato **verificável** ("6+ passos que outra pessoa segue sem perguntar nada", não "faça um algoritmo"). Sempre tem a etapa "troque e testem" / "eu sigo o seu ao pé da letra". |
-| `CARTAO-DE-MEMORIA.md` | Cabe numa folha, ordem de uso na aula. Pode ter a **forma** genérica do comando (é vocabulário), nunca a solução. |
-| `AULA-PASSO-A-PASSO.md` | Só quando o aluno vai fazer **sozinho**. Aula ao vivo: apague o arquivo. |
-| `gabarito/` | **Arquivo inteiro**, etapa por etapa, dizendo qual mudou e qual não. Fragmento solto não serve na hora da aula. |
+| `README.md` | **Painel, não texto.** Cabe numa tela (~45 linhas). Tudo em tabela, zero parágrafo, zero código. Marco mínimo explícito na tabela de blocos. |
+| `DESAFIO.md` | Só "você". **Nada de código pronto**: cada etapa = alvo + ferramenta + **Teste** concreto. A tabela "Comandos de hoje" pode ter a **forma** genérica (é vocabulário), nunca a solução. ~60 linhas. |
+| `gabarito/` | **Arquivo inteiro**, etapa por etapa, dizendo qual mudou e qual não. |
 
-**Vale para todo material do aluno** (`DESAFIO`, `ATIVIDADE`, `CARTAO`,
-`PASSO-A-PASSO`): só "você". Nada de número de turma, rubrica, bloco de tempo
-ou "registrar progresso" — isso mora no `ROTEIRO-AULA.md`.
+Nada de turma, tempo ou rubrica no `DESAFIO.md`/`ATIVIDADE.md` — isso mora no `README.md`.
+
+Exemplo: [CY3 · 01 Git e GitHub](../../niveis/CY3/01-git-e-github/).
 
 ---
 
@@ -103,8 +95,8 @@ os mesmos.
 
 3. **Copiar o template** (comando lá em cima).
 
-4. **Preencher nesta ordem:** `ROTEIRO-AULA.md` (é onde você pensa a aula) →
-   arquivo do aluno → `gabarito/` → `README.md`.
+4. **Preencher nesta ordem:** `README.md` (é onde você pensa a aula) →
+   `DESAFIO.md` → `gabarito/`.
 
 5. **Testar do zero** como o aluno faria. Teórica: fazer a atividade você
    mesmo e cronometrar.
@@ -114,7 +106,7 @@ os mesmos.
 ### Checklist antes de dar a aula
 
 - [ ] `python alunos/buscar_turmas.py` rodado
-- [ ] `ROTEIRO-AULA.md` cabe numa tela, blocos somam a duração real
+- [ ] `README.md` cabe numa tela, blocos somam a duração real
 - [ ] Escopo estimado e **cortado pela metade**
 - [ ] **Marco mínimo** na tabela + o que cortar se atrasar
 - [ ] Cada conceito do cabeçalho tem linha na tabela com checagem

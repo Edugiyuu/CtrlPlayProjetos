@@ -1,88 +1,33 @@
-# Atividade — <NOME CURTO DA ATIVIDADE>
+# <NOME CURTO DA ATIVIDADE>
 
-**Tempo:** ~<N> min · **Dificuldade:** ▓▓░░░
-**Ferramenta:** <ex.: Excalidraw (excalidraw.com) — não precisa criar conta>
-**O que você entrega:** <ex.: um fluxograma exportado em PNG>
+**Ferramenta:** <ex.: excalidraw.com> · **Entrega:** <ex.: fluxograma em PNG>
 
-<1 parágrafo de contexto ligando com o que acabou de ser explicado.>
+**Alvo:** <o que tem que existir no fim — verificável, ex.: "passos que outra pessoa segue sem te perguntar nada">.
 
-Não existe resposta única. Existe resposta que **funciona** e resposta que
-**deixa dúvida** — o teste do final resolve isso.
+## Regras
 
----
+- <regra que força o conceito>
+- <regra de tamanho>
+- <o que NÃO vale>
 
-## O alvo
+## Faça
 
-<Uma frase dizendo exatamente o que tem que existir no fim.
-Ex.: "Um algoritmo, em desenho, que ensine alguém a <tarefa> — de forma que
-essa pessoa consiga executar sem te perguntar nada.">
+1. **<etapa>** — <instrução>.
+2. **<etapa>** — <instrução>.
+3. **Teste de verdade** — troque com alguém (ou o professor) que segue o seu **ao pé da letra**. Onde travar, marque e conserte.
 
----
+## Pronto quando
 
-## As regras
-
-- <regra que força o conceito. Ex.: "cada passo é uma ação só. Se der pra
-  quebrar em dois, quebre.">
-- <regra de tamanho. Ex.: "no mínimo 6 e no máximo 12 passos">
-- <regra que força o outro conceito. Ex.: "tem que ter pelo menos uma
-  pergunta de sim/não que muda o caminho">
-- <o que NÃO vale. Ex.: "não vale 'faça o bolo' como um passo">
-
----
-
-## Como fazer
-
-### 1. <primeira etapa>
-
-- <instrução>
-- <instrução>
-
-### 2. <segunda etapa>
-
-- <instrução>
-
-### 3. <terceira etapa>
-
-- <instrução>
-
-### 4. Teste de verdade
-
-- <Troque com um colega. Siga o algoritmo dele **ao pé da letra**, sem
-  adivinhar nada. | Me chame e eu sigo o seu ao pé da letra.>
-- Onde travar, **marque**. Travou = o passo estava vago.
-- Volte e conserte os passos que travaram.
-
----
-
-## Está pronto quando
-
-- [ ] <critério concreto e verificável>
-- [ ] <critério concreto e verificável>
+- [ ] <critério concreto>
 - [ ] Outra pessoa executou do começo ao fim **sem te perguntar nada**.
-- [ ] Você consegue apontar no seu desenho onde está <o conceito da aula>.
+- [ ] Você aponta no seu artefato onde está <o conceito>.
 
----
+## Travou?
 
-## Se travar
+| Problema | Dica |
+|---|---|
+| Não sei por onde começar | <dica> |
 
-- **Não sei por onde começar** → <a dica de destravamento, ex.: "escreva
-  primeiro em português, uma linha por passo. Só depois desenhe.">
-- **Meus passos ficaram gigantes** → <dica>
-- **Não sei onde entra <o conceito>** → <dica>
+## Sobrou tempo
 
----
-
-## Antes de fechar
-
-<Uma pergunta de reflexão pra ele responder por escrito, em uma frase, no
-próprio artefato ou num comentário.
-Ex.: "Qual passo do seu algoritmo foi o mais difícil de escrever sem deixar
-dúvida? Por quê?">
-
----
-
-## Se sobrar tempo
-
-1. <extensão: refazer com uma restrição a mais>
-2. <extensão: adaptar o artefato para outro caso>
-3. <extensão: achar o problema no exemplo de outra pessoa>
+1. <extensão, sem solução>

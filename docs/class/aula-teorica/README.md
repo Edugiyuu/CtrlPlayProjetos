@@ -1,21 +1,30 @@
-# <TEMA DA AULA> — <o que eles vão entender, em 3 palavras>
+# <TEMA> (teórica) — <NÍVEL> · aula <NN>
 
-Aula **#<N>** · turma **#<id> (<CÓDIGO>)** · <aluno(s)>
-Aula **teórica**: o resultado não é código rodando, é o aluno **explicando**
-<o conceito central> com as próprias palavras.
+`bloco <X>h · escopo real ~<Y> min`
 
-<1 frase: por que esta aula existe agora e o que ela destrava adiante.>
+**Já sabem:** <o real> · **Novo hoje:** <1–2 conceitos> · **Fora:** <o que fica pra depois>
+**Abre com:** "<a primeira coisa que sai da boca DELES>"
 
-## Formato
+Todo bloco: **explico → mostro → eles fazem**. Nunca mais de ~10 min de você falando.
 
-<Em 1–2 linhas. Ex.: "3 blocos de conceito com checagem, intercalados com uma
-dinâmica desplugada. Última meia hora é a atividade no Excalidraw.">
+| Min | Bloco | Eles fazem |
+|----:|---|---|
+| 0–10 | Abertura: <provocação> | <respondem> |
+| 10–25 | Conceito 1 | ✋ checagem |
+| 25–40 | Conceito 2 | ✋ checagem |
+| **✅ 40** | **MARCO MÍNIMO — daqui pra baixo é bônus** | |
+| 40–80 | [ATIVIDADE.md](./ATIVIDADE.md) — você destrava sem dar resposta | produzem o artefato |
+| 80–90 | Fechamento | explicam o próprio artefato |
 
-## Arquivos
+**Atrasou?** corta <X>. Nunca corta <Y>.
 
-| Arquivo | De quem | O quê |
-|---|---|---|
-| [ROTEIRO-AULA.md](./ROTEIRO-AULA.md) | professor | **abre este na aula** — blocos, conceitos, checagens |
-| [ATIVIDADE.md](./ATIVIDADE.md) | aluno | a tarefa que produz o artefato |
-| [CARTAO-DE-MEMORIA.md](./CARTAO-DE-MEMORIA.md) | aluno | as definições numa folha só |
-| [gabarito/](./gabarito/) | professor | exemplo bom, critérios, o que aceitar |
+| Conceito | Em 1 frase | Exemplo real | ✋ Checagem (resposta boa) |
+|---|---|---|---|
+| <termo> | <sem jargão> | <exemplo pronto, pra não improvisar> | "<pergunta>" (<resposta>) |
+
+| Eles acham | O exemplo que quebra |
+|---|---|
+| <confusão comum> | <...> |
+
+**Entendeu =** exemplo próprio · explica sem repetir suas palavras · acha o erro num exemplo errado.
+**Antes:** <quadro / ferramenta / objeto> · Aluno: [ATIVIDADE.md](./ATIVIDADE.md) · Critérios: [gabarito/](./gabarito/)

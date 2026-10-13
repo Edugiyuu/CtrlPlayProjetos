@@ -1,22 +1,22 @@
 # CtrlPlay Alunos
 
-Material de aula organizado **por turma**. Cada turma tem sua própria pasta
-em [`turmas/`](turmas/), no formato `<CÓDIGO>-<id>` (ex.: `CY4-11350`), com um
-subprojeto por aula dentro dela:
+Material de aula organizado **por nível** (CK1–CK4, CT1–CT4, CY1–CY4) em
+[`niveis/`](niveis/). As aulas de cada nível são minhas — uma pasta por aula:
 
 ```text
 CtrlPlayAlunos/
-├── turmas/
-│   ├── CY1-10671/<projetos da turma CY1 #10671>
-│   ├── CY2-11342/<projetos da turma CY2 #11342>
-│   └── ...
+├── niveis/
+│   ├── CK1/<NN-nome-da-aula>
+│   ├── CK2/...
+│   └── ...            # CK1–4, CT1–4, CY1–4
+├── turmas/            # material antigo, por turma — mantido como estava
 ├── docs/class/        # templates de aula (prática e teórica) — copiar e preencher
-└── outros-projetos/   # material avulso, não preso a uma turma específica
+└── outros-projetos/   # material avulso
 ```
 
-Na hora de dar aula: abra [`turmas/`](turmas/), ache o código+id da turma do
-dia (bate com `alunos/progresso/turma-<id>.md`) e pegue a pasta do projeto de
-lá. Veja o índice completo em [turmas/README.md](turmas/README.md).
+Na hora de dar aula: abra [`niveis/`](niveis/README.md), entre no nível da
+turma do dia e pegue a aula. O material antigo por turma continua em
+[`turmas/`](turmas/README.md).
 
 ## Para os alunos
 
@@ -57,7 +57,7 @@ Para **criar uma aula nova**, copie o esqueleto pronto de
 programa) e outro para aula **teórica** (o aluno entende e explica):
 
 ```bash
-cp -r docs/class/aula-pratica turmas/<CÓDIGO>-<id>/<NN>-nome-da-aula
+cp -r docs/class/aula-pratica niveis/<NÍVEL>/<NN>-nome-da-aula
 ```
 
 O fluxo completo para planejar, dar e registrar aulas está em

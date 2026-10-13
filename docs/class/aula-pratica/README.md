@@ -1,27 +1,26 @@
-# <NOME DO PROJETO> — <o que a aula treina em 3 palavras>
+# <TEMA> — <NÍVEL> · aula <NN>
 
-Aula **#<N>** · turma **#<id> (<CÓDIGO>)** · <aluno(s)>
-<1 frase: o que é o projeto e de onde vem (continua a aula #N-1? projeto novo?)>
+`bloco <X>h · escopo real ~<Y> min`
 
-> **Adaptação:** <só se você trocou o tema oficial do cronograma — o quê e por
-> quê. Cronograma oficial inalterado; adaptação registrada no progresso da turma.>
+**Sai de:** <onde ele está> → **chega em:** <onde termina>
+**Já tem:** <pré-requisito real> · **Novo hoje:** <1–3 coisas> · **Fora:** <o que fica pra depois>
+**Abre com:** "<pergunta que cria a necessidade da aula>"
 
-## Como rodar
+| Min | O quê | Teste na tela |
+|----:|---|---|
+| 0–10 | <abertura> | <...> |
+| 10–<M> | <bloco 1> | <valor concreto> |
+| **✅ <M>** | **MARCO MÍNIMO — daqui pra baixo é bônus** | <...> |
+| <M>+ | <bônus> | <...> |
 
-```bash
-<comando exato>
-```
+**Atrasou?** corta <X>. Nunca corta <Y>.
 
-## Formato
-
-<Em 1–2 linhas: como a aula corre. Ex.: "4 desafios acumulativos sobre um
-arquivo que cresce. E1+E2 na aula (E2 fecha o marco mínimo). E3 se sobrar. E4 casa.">
-
-## Arquivos
-
-| Arquivo | De quem | O quê |
+| Conceito | Em 1 frase | ✋ Checagem (resposta boa) |
 |---|---|---|
-| [ROTEIRO-AULA.md](./ROTEIRO-AULA.md) | professor | **abre este na aula** — blocos, marco, erros |
-| [DESAFIO.md](./DESAFIO.md) | aluno | o que fazer e o que testar |
-| [CARTAO-DE-MEMORIA.md](./CARTAO-DE-MEMORIA.md) | aluno | folha de consulta (opcional) |
-| [gabarito/](./gabarito/) | professor | resposta completa + código de referência |
+| `<termo>` | <...> | "<pergunta>" (<resposta>) |
+
+| Ele vê | Você checa |
+|---|---|
+| <erro> | <o quê> |
+
+**Antes:** <o que preparar> · Aluno: [DESAFIO.md](./DESAFIO.md) · Respostas: [gabarito/](./gabarito/)
