@@ -67,26 +67,23 @@ entra na foto; o commit tira a foto."
 
 ---
 
-## Etapa 6 — sair da conta
+## Etapas 0 e 6 — limpar o PC (antes e depois)
 
-```bash
-git credential-manager github list            # mostra: ana-souza
-git credential-manager github logout ana-souza
-git credential-manager github list            # não mostra nada
+Por que a etapa 0 existe: o `git push` autoriza pelo navegador e guarda o login
+no Windows. Se o navegador ou o Windows ainda tem a conta de **outro aluno**, o
+push vai pra conta errada ou dá `Permission to ... denied to <outro aluno>` (403).
 
-git config --global --unset user.name
-git config --global --unset user.email
-git config --global user.name                 # não imprime nada
-```
+Ordem (as duas vezes, sem terminal):
 
-No navegador: foto (canto de cima) → **Sign out** → a página mostra **Sign in**.
+1. github.com → foto → **Sign out**.
+2. Tecla Windows → **credenciais** → **Gerenciador de Credenciais** →
+   **Credenciais do Windows** → remover todo item com `github` no nome. Os
+   comuns: `git:https://github.com` (Git), `gh:github.com:...` (GitHub CLI),
+   `vscodevscode.github-authentication/github.auth` (VS Code).
+3. VS Code → ícone de pessoa → conta do GitHub → **Sign Out**.
 
-**Se ele logou no VS Code também** (ícone de pessoa, canto de baixo à esquerda):
-clicar → conta dele → **Sign Out**.
-
-**Plano B, se `credential-manager` der erro:** Painel de Controle →
-**Gerenciador de Credenciais** → **Credenciais do Windows** → apagar as entradas
-`git:https://github.com` (e a com o nome do usuário, se houver).
+O `user.name`/`user.email` do aluno anterior não precisa apagar: o `git config`
+da etapa 3 grava por cima.
 
 A pasta `meu-primeiro-repo` pode ficar no PC: sem o login, ninguém consegue dar
 push na conta dele a partir dela.

@@ -8,18 +8,28 @@
 
 | Min | O quê | Teste na tela |
 |----:|---|---|
-| 0–10 | Abertura → Git x GitHub | ele diz qual é programa e qual é site |
+| 0–5 | **Limpar o PC** (DESAFIO etapa 0): site → Sign out · Gerenciador de Credenciais → remove `github` · VS Code → Sign Out | site mostra "Sign in", nenhuma credencial `github` |
+| 5–10 | Abertura → Git x GitHub | ele diz qual é programa e qual é site |
 | 10–25 | Conta no github.com (código chega no e-mail) | `github.com/<usuario>` abre |
 | 25–35 | Repo `meu-primeiro-repo`, público, **com README** | página do repo mostra o README |
 | 35–45 | `git config` → `git clone` → abrir no VS Code | pasta com `README.md` |
 | 45–60 | Editar README → `status` → `add` → `commit` | `git log` mostra o commit dele |
-| 60–70 | `git push` → login no navegador → F5 | texto novo no site |
+| 60–70 | `git push` → **Sign in with your browser** → confere a conta → Authorize → F5 | texto novo no site |
 | **✅ 70** | **MARCO MÍNIMO — daqui pra baixo é bônus** | |
 | 70–80 | 2º commit → aba **Commits** | 2 commits dele |
-| **80–90** | **LOGOUT — nunca corta** | `github list` vazio, site pede "Sign in" |
+| **80–90** | **LOGOUT — nunca corta** (etapa 0 de novo) | site mostra "Sign in", nenhuma credencial `github` |
 
 **Atrasou?** corta o 2º commit. Nunca corta o logout (PC compartilhado).
 Conta travou na verificação? Acompanha a sua demo e cria em casa; logout igual.
+
+**Limpar o PC (início e fim) — só cliques:**
+
+| # | Onde | Faz |
+|--:|---|---|
+| 1 | github.com | foto (canto de cima) → **Sign out** |
+| 2 | Tecla Windows → **credenciais** → Gerenciador de Credenciais → **Credenciais do Windows** | remove todo item com `github`: `git:https://github.com`, `gh:github.com:...`, `...github.auth` |
+| 3 | VS Code → ícone de pessoa (canto de baixo à esquerda) | conta do GitHub → **Sign Out** |
+| ✓ | | site mostra "Sign in" e nenhuma credencial com `github` |
 
 | Conceito | Em 1 frase | ✋ Checagem (resposta boa) |
 |---|---|---|
@@ -35,8 +45,8 @@ Conta travou na verificação? Acompanha a sua demo e cria em casa; logout igual
 | `fatal: not a git repository` | fora da pasta → `cd meu-primeiro-repo` |
 | `nothing to commit` / `nothing added` | não salvou / pulou o `add` |
 | push pede **senha** no terminal | tem que abrir janela no navegador |
-| push entra na conta de **outro aluno** | PC não foi limpo → logout e push de novo |
+| `Permission ... denied to <outro aluno>` (403) | login de outro aluno no PC ou no navegador → etapa 0 inteira e push de novo |
 | código não chega no e-mail | spam; GitHub exige 13+ anos |
 
-**Antes:** PC limpo (`git credential-manager github list` vazio, `git config --global user.name` vazio, github.com deslogado) · aluno com o e-mail no celular
+**Antes:** aluno com o e-mail no celular
 Aluno: [DESAFIO.md](./DESAFIO.md) · Respostas: [gabarito/](./gabarito/)
