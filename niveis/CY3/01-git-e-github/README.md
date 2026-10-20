@@ -44,9 +44,9 @@ Conta travou na verificação? Acompanha a sua demo e cria em casa; logout igual
 | `Author identity unknown` | faltou `git config` |
 | `fatal: not a git repository` | fora da pasta → `cd meu-primeiro-repo` |
 | `nothing to commit` / `nothing added` | não salvou / pulou o `add` |
-| push pede **senha** no terminal | tem que abrir janela no navegador |
+| push pede **senha** ou não abre o navegador | [gabarito/EMERGENCIA.md](./gabarito/EMERGENCIA.md) |
 | `Permission ... denied to <outro aluno>` (403) | login de outro aluno no PC ou no navegador → etapa 0 inteira e push de novo |
 | código não chega no e-mail | spam; GitHub exige 13+ anos |
 
 **Antes:** aluno com o e-mail no celular
-Aluno: [DESAFIO.md](./DESAFIO.md) · Respostas: [gabarito/](./gabarito/)
+Aluno: [DESAFIO.md](./DESAFIO.md) · Respostas: [gabarito/](./gabarito/) · Deu ruim: [EMERGENCIA.md](./gabarito/EMERGENCIA.md)
