@@ -21,7 +21,7 @@ depois da primeira aula de SQL. Ver decisão completa na memória
 | #10 | [10-aula-biblioteca-sql-auth-jwt/](10-aula-biblioteca-sql-auth-jwt/) — cadastro e login JWT · **gabarito** |
 | #11 | [11-aula-biblioteca-sql-autorizacao-jwt/](11-aula-biblioteca-sql-autorizacao-jwt/) — papel e 401/403 · **gabarito** |
 | #12 | [12-aula-biblioteca-sql-swagger-cookies/](12-aula-biblioteca-sql-swagger-cookies/) — cookie httpOnly · **gabarito** |
-| #13 | [13-aula-biblioteca-sql-frontend/](13-aula-biblioteca-sql-frontend/) — CORS + React consumindo a API; **gabarito pronto e testado** em [gabarito/](13-aula-biblioteca-sql-frontend/gabarito/) |
+| #13 | [13-aula-biblioteca-sql-frontend/](13-aula-biblioteca-sql-frontend/) — CORS + HTML/JS consumindo a API; **gabarito pronto e testado** em [gabarito/](13-aula-biblioteca-sql-frontend/gabarito/) |
 | #14 | [14-aula-tarefas-crud-sequelize/](14-aula-tarefas-crud-sequelize/) — projeto novo: Lista de Tarefas |
 | #15 | [15-aula-tarefas-filtros-ordenacao/](15-aula-tarefas-filtros-ordenacao/) |
 | #16 | [16-aula-react-pokemons-revisao/](16-aula-react-pokemons-revisao/) — sem banco, revisão de React |

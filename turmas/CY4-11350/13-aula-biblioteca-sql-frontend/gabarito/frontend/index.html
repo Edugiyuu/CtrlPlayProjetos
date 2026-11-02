@@ -4,9 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <h1>Biblioteca Digital</h1>
+    <p class="sub">HTML + JavaScript (5173) consumindo a API Express + SQLite (3000)</p>
+
+    <!-- o JavaScript coloca os cards aqui dentro -->
+    <div id="estante" class="estante"></div>
+
+    <form id="form" class="form">
+      <h2>Cadastrar livro</h2>
+
+      <input id="titulo" placeholder="Titulo" required />
+      <input id="genero" placeholder="Genero" required />
+      <input id="ano" placeholder="Ano" type="number" required />
+
+      <!-- as opcoes de autor vem da API -->
+      <select id="autor" required>
+        <option value="">Escolha o autor</option>
+      </select>
+
+      <button type="submit">Salvar no banco</button>
+      <p id="mensagem"></p>
+    </form>
+
+    <script src="script.js"></script>
   </body>
 </html>

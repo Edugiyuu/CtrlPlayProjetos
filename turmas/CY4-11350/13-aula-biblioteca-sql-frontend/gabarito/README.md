@@ -1,4 +1,4 @@
-# Gabarito da Aula #13 — Backend (Express + SQLite) + Frontend (React)
+# Gabarito da Aula #13 — Backend (Express + SQLite) + Frontend (HTML + JavaScript)
 
 Projeto **pronto e testado**, para rodar antes da aula. Dois projetos
 separados, no mesmo computador, cada um na sua porta:
@@ -6,7 +6,7 @@ separados, no mesmo computador, cada um na sua porta:
 | Pasta | O que é | Porta |
 |---|---|---|
 | [backend/](backend/) | API Express + SQLite via Sequelize, em MVC (igual às aulas #7–#9) | 3000 |
-| [frontend/](frontend/) | React com Vite, consumindo a API | 5173 |
+| [frontend/](frontend/) | HTML + CSS + JavaScript puro (sem React), servido pelo Vite | 5173 |
 
 ## Como rodar (dois terminais)
 
@@ -30,7 +30,7 @@ Abrir <http://localhost:5173>. As duas portas são fixas: o backend só libera
 
 ## O que dá pra mostrar na tela
 
-- **Listar** — a tela carrega os livros da API com `useEffect` + `fetch`,
+- **Listar** — a tela carrega os livros da API com `fetch` assim que a página abre,
   cada um com o nome do autor (vem do `include` do Sequelize).
 - **Cadastrar** — o formulário faz `POST /livros`; o `<select>` de autores
   vem de `GET /autores`. O livro novo aparece na lista na hora.
@@ -106,24 +106,27 @@ bagunça de uma aula antes da próxima.
 
 ```text
 frontend/
-├── index.html                     a página; carrega src/main.jsx
-├── vite.config.js                 fixa a porta 5173
-└── src/
-    ├── main.jsx                   monta o React na página
-    ├── App.jsx                    busca os livros e guarda a lista no estado
-    ├── ListaLivros.jsx            renderiza a estante (um CardLivro por livro)
-    ├── FormNovoLivro.jsx          formulário controlado → POST
-    ├── api.js                     todas as chamadas à API, num lugar só
-    └── estilos.css
+├── index.html                     a página: título, estante vazia e o formulário
+├── estilos.css                    cards em flexbox, uma cor por gênero
+├── script.js                      os fetch e o HTML de cada card
+├── package.json                   só o Vite (nada de React)
+└── vite.config.js                 fixa a porta 5173
 ```
 
-`api.js` existe para que nenhum componente escreva `http://localhost:3000` no
-meio do JSX. Se a porta da API mudar, muda numa linha só.
+O Vite aqui só serve os arquivos na porta 5173. A porta precisa ser essa
+porque é a única que o CORS do backend libera.
 
-O estado da lista mora em `App.jsx`, não nos filhos: quem cadastra
-(`FormNovoLivro`) e quem empresta (`ListaLivros`) avisam o pai por uma função
-recebida via props (`aoCriar`, `aoAtualizar`), e o pai atualiza a lista. É a
-mesma ideia de props da aula de React, agora com dado que veio do banco.
+O `script.js` é dividido em 4 partes, na ordem da aula:
+
+| Parte | Função | O que faz |
+|---|---|---|
+| 1 | `carregarLivros()` | `GET /livros` e monta um card por livro com `innerHTML` |
+| 2 | `emprestar(id)` | `PATCH`, depois chama `carregarLivros()` de novo |
+| 3 | `carregarAutores()` | `GET /autores` e enche o `<select>` |
+| 4 | `submit` do form | `POST /livros`, limpa o form e recarrega a lista |
+
+Depois de cada mudança, a lista inteira é buscada de novo. Mais simples que
+atualizar um card só, e eles veem o dado vindo do banco toda vez.
 
 ## Rotas da API
 
@@ -134,20 +137,19 @@ mesma ideia de props da aula de React, agora com dado que veio do banco.
 | PATCH | `/livros/:id/emprestimo` | troca `disponivel` | 404 se o livro não existe |
 | GET | `/autores` | lista autores (alimenta o `<select>`) | — |
 
-## `import` nos dois lados
+## `import` no backend
 
-O backend usa `import`/`export`, igual ao front — nada de `require`. O que
+O backend usa `import`/`export`, nada de `require`. O que
 liga isso é a linha `"type": "module"` no
 [backend/package.json](backend/package.json); sem ela, o Node assume
 `require`. Detalhe que pega: no backend o `.js` no fim do caminho é
-**obrigatório** (`import Autor from './models/Autor.js'`), diferente do
-front, onde o Vite deixa omitir.
+**obrigatório** (`import Autor from './models/Autor.js'`).
 
 ## O ponto da aula: CORS
 
 O front (`:5173`) e a API (`:3000`) são **origens diferentes** para o
 navegador. Sem o `cors(...)` em [backend/server.js](backend/server.js), todo
-`fetch` do React é bloqueado — e quem bloqueia é o navegador, não o Express
+`fetch` do `script.js` é bloqueado — e quem bloqueia é o navegador, não o Express
 (por isso o Insomnia continua funcionando).
 
 Demonstração ao vivo: comentar o `app.use(cors(...))`, recarregar o front,
@@ -156,5 +158,5 @@ mostrar o erro vermelho no console, e só então descomentar.
 ## O que este gabarito **não** tem
 
 **Login.** Depende do JWT e do cookie httpOnly das aulas #10–#12. O backend já
-está com `credentials: true` no CORS e o front já manda `credentials: 'include'`
-em toda chamada, então o login encaixa depois sem mexer no resto.
+está com `credentials: true` no CORS; quando tiver login, o front só precisa
+mandar `credentials: 'include'` nos `fetch`.
