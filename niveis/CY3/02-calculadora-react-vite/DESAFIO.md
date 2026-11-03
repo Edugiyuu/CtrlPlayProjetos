@@ -1,6 +1,6 @@
 # Sua calculadora
 
-No fim, você digita **7** e **3**, clica **+** e aparece **Resultado: 10**.
+No fim, você clica **1 2 + 3 =** e o visor mostra **15**.
 
 ## Comandos de hoje
 
@@ -14,53 +14,57 @@ No fim, você digita **7** e **3**, clica **+** e aparece **Resultado: 10**.
 
 1. **Criar** — `npm create vite@latest calculadora` → React → JavaScript. Depois `cd calculadora`, `npm install`, `npm run dev`.
    **Teste:** o navegador mostra a página do Vite.
-2. **Limpar** — em `src/App.jsx`, apague tudo e deixe só isto:
+2. **Visor** — crie `src/Visor.jsx`:
    ```jsx
-   function App() {
-     return <h1>Calculadora</h1>
+   function Visor({ valor }) {
+     return <div className="visor">{valor}</div>
    }
-   export default App
+   export default Visor
    ```
-   **Teste:** a página mostra só "Calculadora".
-3. **Os dois números** — importe o `useState` (`import { useState } from 'react'`). Dentro de `App`, antes do `return`:
+   Em `App.jsx`, apague tudo, importe o `Visor` e use `<Visor valor="oi" />`.
+   **Teste:** a tela mostra "oi".
+3. **Botão** — crie `src/Botao.jsx`:
    ```jsx
-   const [a, setA] = useState('')
-   const [b, setB] = useState('')
+   function Botao({ texto, aoClicar }) {
+     return <button onClick={() => aoClicar(texto)}>{texto}</button>
+   }
+   export default Botao
    ```
-   No `return`, coloque dois campos (o `return` precisa de **uma** `<div>` por fora):
+   **Teste:** `<Botao texto="7" aoClicar={alert} />` → clicar mostra um alerta "7".
+4. **Dígitos** — no `App`: `const [visor, setVisor] = useState('')` e
    ```jsx
-   <input type="number" value={a} onChange={(e) => setA(e.target.value)} />
-   <input type="number" value={b} onChange={(e) => setB(e.target.value)} />
+   function digito(d) {
+     setVisor(visor + d)
+   }
    ```
-   **Teste:** digite nos campos e os números aparecem. (Ponha `<p>{a}</p>` embaixo pra ver o estado mudando.)
-4. **Resultado** — crie `const [resultado, setResultado] = useState('')` e mostre `<h2>Resultado: {resultado}</h2>`.
-   **Teste:** mude `''` para `'oi'` no código: a tela mostra "Resultado: oi". Volte pra `''`.
-5. **Botão +** — um botão que calcula:
-   ```jsx
-   <button onClick={() => setResultado(Number(a) + Number(b))}>+</button>
-   ```
-   **Teste:** `7` e `3`, clica `+` → **Resultado: 10**.
-6. **Outras contas** — botões `-`, `×` (`*`) e `÷` (`/`), iguais ao `+`.
-   **Teste:** `9` e `3` com `÷` → 3.
+   Troque `valor="oi"` por `valor={visor}` e crie os botões 0–9: `<Botao texto="7" aoClicar={digito} />`.
+   **Teste:** clicar 1, 2 mostra `12`.
+5. **Guardar o 1º número** — mais dois estados: `numero1` e `operacao`. Uma função `escolherOperacao(op)` que guarda o visor em `numero1`, guarda `op` e limpa o visor. Botão `+` chama ela.
+   Troque o visor por `<Visor valor={numero1 + ' ' + operacao + ' ' + visor} />` pra conta toda aparecer.
+   **Teste:** `12`, `+` → visor mostra `12 +`; clica `3` → `12 + 3`.
+6. **Igual** — função `igual()`: se `operacao` for `'+'`, mostra `Number(numero1) + Number(visor)`. Depois zere `numero1` e `operacao` (senão o `12 +` continua na tela).
+   **Teste:** `12 + 3 =` → **15**.
+7. **Resto** — `-`, `×`, `÷` no `igual`, e um botão `C` que zera os três estados.
+   **Teste:** `9 ÷ 3 =` → 3; `C` limpa.
 
 ## Check
 
-- [ ] `7` e `3` com `+` dá 10.
-- [ ] Você sabe dizer **por que** não usamos `let a = ...`.
-- [ ] Você sabe dizer a diferença entre `onClick={f}` e `onClick={f()}`.
+- [ ] `12 + 3 =` dá 15 e `C` limpa.
+- [ ] Você sabe dizer **o que é uma prop** (ex.: `texto="7"`).
+- [ ] Você sabe dizer **por que** só escreveu `<button>` uma vez.
 
 ## Travou?
 
 | Você vê | Faça |
 |---|---|
-| digito e nada aparece | o `<input>` tem `value` e `onChange`? |
-| `7 + 3` dá `73` | use `Number(a) + Number(b)` |
-| resultado aparece sozinho ao abrir | `onClick={() => ...}`, com a setinha |
+| `Botao is not defined` | faltou o `import Botao from './Botao.jsx'` |
+| botão sem número | no `Botao`: `{ texto }` com chaves e `{texto}` no meio do botão |
+| visor não muda | use `setVisor(...)`, nunca `visor = ...` |
+| `12 + 3` dá `123` | o `+` chamou `digito`? tem que ser `escolherOperacao` |
 | página branca | F12 → Console → leia a primeira linha vermelha |
-| `npm` não existe | chame o professor |
 
 ## Sobrou tempo
 
-1. CSS: dois campos e quatro botões bonitos (`display: grid`).
-2. `÷` por 0 mostra **Erro**.
+1. CSS: `.teclas { display: grid; grid-template-columns: repeat(4, 1fr); }`.
+2. Prop `cor` no `Botao` (vira `className`) pra operações ficarem laranja.
 3. Commit + push do projeto no GitHub (e logout do PC, como na aula 01).

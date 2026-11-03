@@ -1,35 +1,66 @@
 import { useState } from 'react'
+import Visor from './Visor.jsx'
+import Botao from './Botao.jsx'
 
 function App() {
-  const [a, setA] = useState('')
-  const [b, setB] = useState('')
-  const [resultado, setResultado] = useState('')
+  const [visor, setVisor] = useState('')
+  const [numero1, setNumero1] = useState('')
+  const [operacao, setOperacao] = useState('')
 
-  function calcular(operacao) {
-    const x = Number(a)
-    const y = Number(b)
+  function digito(d) {
+    setVisor(visor + d)
+  }
 
-    if (operacao === '+') setResultado(x + y)
-    if (operacao === '-') setResultado(x - y)
-    if (operacao === '×') setResultado(x * y)
-    if (operacao === '÷') setResultado(y === 0 ? 'Erro' : x / y)
+  function escolherOperacao(op) {
+    setNumero1(visor)
+    setOperacao(op)
+    setVisor('')
+  }
+
+  function igual() {
+    const a = Number(numero1)
+    const b = Number(visor)
+
+    if (operacao === '+') setVisor(String(a + b))
+    if (operacao === '-') setVisor(String(a - b))
+    if (operacao === '×') setVisor(String(a * b))
+    if (operacao === '÷') setVisor(String(a / b))
+
+    setNumero1('')
+    setOperacao('')
+  }
+
+  function limpar() {
+    setVisor('')
+    setNumero1('')
+    setOperacao('')
   }
 
   return (
     <div className="calculadora">
-      <h1>Calculadora</h1>
+      <Visor valor={numero1 + ' ' + operacao + ' ' + visor} />
 
-      <input type="number" value={a} onChange={(e) => setA(e.target.value)} />
-      <input type="number" value={b} onChange={(e) => setB(e.target.value)} />
+      <div className="teclas">
+        <Botao texto="7" aoClicar={digito} />
+        <Botao texto="8" aoClicar={digito} />
+        <Botao texto="9" aoClicar={digito} />
+        <Botao texto="÷" aoClicar={escolherOperacao} cor="op" />
 
-      <div className="botoes">
-        <button onClick={() => calcular('+')}>+</button>
-        <button onClick={() => calcular('-')}>-</button>
-        <button onClick={() => calcular('×')}>×</button>
-        <button onClick={() => calcular('÷')}>÷</button>
+        <Botao texto="4" aoClicar={digito} />
+        <Botao texto="5" aoClicar={digito} />
+        <Botao texto="6" aoClicar={digito} />
+        <Botao texto="×" aoClicar={escolherOperacao} cor="op" />
+
+        <Botao texto="1" aoClicar={digito} />
+        <Botao texto="2" aoClicar={digito} />
+        <Botao texto="3" aoClicar={digito} />
+        <Botao texto="-" aoClicar={escolherOperacao} cor="op" />
+
+        <Botao texto="C" aoClicar={limpar} cor="limpar" />
+        <Botao texto="0" aoClicar={digito} />
+        <Botao texto="=" aoClicar={igual} cor="igual" />
+        <Botao texto="+" aoClicar={escolherOperacao} cor="op" />
       </div>
-
-      <h2>Resultado: {resultado}</h2>
     </div>
   )
 }
