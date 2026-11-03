@@ -1,8 +1,10 @@
 # Gabarito do DESAFIO.md — para o professor
 
 O resultado final é o site de [`../inicial/site/`](../inicial/site/) no ar em
-`https://<usuario>.github.io/meu-site/`. Esses 3 HTML são os do gabarito da aula 01:
-use só se o aluno não tiver o dele salvo.
+`https://<usuario>.github.io/meu-site/`. São 4 arquivos: `index.html`, `sobre.html`,
+`contato.html` e `estilos.css`. O CSS fica separado do HTML (cada página tem
+`<link rel="stylesheet" href="estilos.css">`) e as cores moram em 4 variáveis no
+topo do `estilos.css`. Use essa pasta se o aluno não tiver o site dele.
 
 ---
 
@@ -19,7 +21,9 @@ problema que a aula resolve.
 
 **Etapa 3 (upload).** O erro número um: arrastar a pasta `site`. O GitHub preserva a
 pasta e o site vai pra `/meu-site/site/`. Mostre os dois endereços. Corrigir: apagar
-os arquivos (abrir o arquivo → lixeira → Commit) e subir os 3 soltos.
+os arquivos (abrir o arquivo → lixeira → Commit) e subir os 4 soltos. O segundo erro
+é esquecer o `estilos.css`: o site abre pelado, e é um bom momento pra perguntar
+"o que o `<link>` procura e não acha?".
 
 **Etapa 4 (Pages).** Settings → Pages → Source: *Deploy from a branch* → `main` /
 `(root)`. Primeira publicação leva 1–2 min: aproveite pra fazer a pergunta "quem roda
@@ -42,8 +46,8 @@ usuário tem maiúscula, o link sai diferente do que ele digitou; é normal.
 **404 logo após salvar.** Normal por 1–2 min. Se passar de 5, aba **Actions**: o
 deploy aparece lá; se estiver vermelho, Settings → Pages e Save de novo.
 
-**Sem cor / só texto.** Arquivo com `<style>` vazio (subiu o `inicial` da aula 01 em vez do pintado). Cheque o `<style>` no
-GitHub (clicar no arquivo).
+**Sem cor / só texto.** `estilos.css` não subiu, subiu dentro de pasta, ou o nome é
+diferente do `href` do `<link>` (`Estilos.css` ≠ `estilos.css`). Confira a lista de arquivos do repo.
 
 **Menu quebrado só no site.** No Windows `Sobre.html` abre como `sobre.html`; no
 GitHub não. Corrija o nome no `href` (ou renomeie o arquivo no GitHub: lápis → nome).
@@ -61,10 +65,6 @@ não do PC.
 
 ## Se sobrar tempo
 
-Edição pelo lápis: o ciclo editar → commit → esperar → Ctrl+F5 mostra que o site
-"vive" no GitHub. A mudança leva ~1 min pra aparecer.
-
-## Se reclamarem do `<style>` copiado 3 vezes
-
-Hoje não é o dia: CSS externo fica pra outra aula. Se o aluno já tiver feito, é só
-subir o `.css` junto, na raiz do repo, e o link continua funcionando.
+Edição pelo lápis no `estilos.css`: troque `--cor-principal` (e `--cor-escura`) no
+topo. As 3 páginas mudam juntas — é o argumento a favor do CSS separado. O ciclo
+editar → commit → esperar → Ctrl+F5 leva ~1 min.

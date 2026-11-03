@@ -1,0 +1,120 @@
+/* Troque as cores aqui e o site inteiro muda (as 3 páginas usam este arquivo) */
+:root {
+  --cor-principal: #6D28D9;
+  --cor-escura: #1E1B4B;
+  --cor-clara: #F5F3FF;
+  --cor-texto: #374151;
+}
+
+body {
+  background-color: var(--cor-clara);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: var(--cor-escura);
+  color: #FFFFFF;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.menu {
+  background-color: var(--cor-principal);
+  padding: 14px 24px;
+  text-align: center;
+}
+
+.menu a {
+  color: #EDE9FE;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.menu a.ativo {
+  color: #FFFFFF;
+  border-bottom: 3px solid #FDE68A;
+  padding-bottom: 4px;
+}
+
+.conteudo {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.titulo {
+  color: var(--cor-escura);
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.card {
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-amarelo { background-color: #FEF3C7; }
+.card-verde   { background-color: #DCFCE7; }
+
+.caixa {
+  background-color: #FFFFFF;
+  border: 2px solid #DDD6FE;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.destaque {
+  background-color: #FCE7F3;
+  padding: 20px 24px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.caixa-azul {
+  background-color: #DBEAFE;
+  padding: 20px 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: var(--cor-principal);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 999px;
+}
+
+.botao:hover {
+  background-color: var(--cor-escura);
+}
+
+.rodape {
+  background-color: var(--cor-escura);
+  color: #C4B5FD;
+  padding: 20px 24px;
+  text-align: center;
+}
