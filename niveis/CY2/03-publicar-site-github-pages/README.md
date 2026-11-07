@@ -1,4 +1,4 @@
-# Publicar o site no GitHub — CY2 · aula 02
+# Publicar o site no GitHub — CY2 · aula 03
 
 `bloco 1h30 · escopo real ~55 min`
 

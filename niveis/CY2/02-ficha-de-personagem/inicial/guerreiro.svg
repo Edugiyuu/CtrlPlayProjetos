@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="fundo" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#64748B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#fundo)"/>
+  <circle cx="30" cy="40" r="2" fill="#FFFFFF"/>
+  <circle cx="205" cy="30" r="1.5" fill="#CFFAFE"/>
+  <circle cx="40" cy="200" r="2" fill="#CFFAFE"/>
+  <!-- espada -->
+  <rect x="186" y="28" width="14" height="140" rx="3" fill="#E2E8F0"/>
+  <rect x="170" y="166" width="46" height="10" rx="4" fill="#22D3EE"/>
+  <rect x="188" y="176" width="10" height="36" rx="3" fill="#92400E"/>
+  <!-- armadura -->
+  <path d="M46 240 Q52 176 120 168 Q188 176 194 240 Z" fill="#94A3B8"/>
+  <path d="M46 240 Q52 176 76 172 L80 240 Z" fill="#64748B"/>
+  <circle cx="120" cy="208" r="12" fill="#22D3EE"/>
+  <circle cx="120" cy="208" r="5" fill="#0F172A"/>
+  <!-- capacete -->
+  <path d="M120 66 Q168 66 168 122 L168 146 Q168 160 154 160 L86 160 Q72 160 72 146 L72 122 Q72 66 120 66 Z" fill="#CBD5E1"/>
+  <rect x="82" y="108" width="76" height="20" rx="10" fill="#0F172A"/>
+  <circle cx="104" cy="118" r="4" fill="#22D3EE"/>
+  <circle cx="136" cy="118" r="4" fill="#22D3EE"/>
+  <rect x="116" y="130" width="8" height="26" rx="3" fill="#94A3B8"/>
+  <!-- penacho -->
+  <path d="M112 68 Q116 24 168 30 Q146 44 134 70 Z" fill="#EF4444"/>
+</svg>

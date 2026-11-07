@@ -78,4 +78,4 @@ linha não é enfeite — sem ele, a linha de baixo para de funcionar.
 2. **Sua paleta** — troque todos os hex por cores suas. Pegue em
    [coolors.co](https://coolors.co) e mantenha o texto legível em cima do fundo.
 3. Conte quantas vezes você copiou o mesmo `<style>`. Guarde esse número — a
-   aula que vem resolve isso com **um arquivo só**.
+   aula 02 resolve isso com **um arquivo só**.

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="fundo" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </radialGradient>
+    <radialGradient id="orbe">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.35" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#0891B2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#fundo)"/>
+  <!-- estrelas -->
+  <circle cx="30" cy="40" r="2" fill="#FFFFFF"/>
+  <circle cx="60" cy="20" r="1.5" fill="#FFFFFF"/>
+  <circle cx="22" cy="110" r="1.5" fill="#CFFAFE"/>
+  <circle cx="215" cy="140" r="2" fill="#FFFFFF"/>
+  <circle cx="45" cy="190" r="2" fill="#CFFAFE"/>
+  <circle cx="150" cy="25" r="1.5" fill="#FFFFFF"/>
+  <!-- cajado e orbe -->
+  <line x1="192" y1="62" x2="202" y2="240" stroke="#92400E" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="192" cy="58" r="40" fill="url(#orbe)"/>
+  <circle cx="192" cy="58" r="12" fill="#A5F3FC"/>
+  <!-- cabelo -->
+  <path d="M78 120 Q68 192 92 208 L148 208 Q172 192 162 120 Z" fill="#EA580C"/>
+  <!-- manto -->
+  <path d="M56 240 Q62 180 120 172 Q178 180 184 240 Z" fill="#4C1D95"/>
+  <path d="M100 176 L120 202 L140 176" stroke="#22D3EE" stroke-width="5" fill="none" stroke-linejoin="round"/>
+  <!-- rosto -->
+  <circle cx="120" cy="130" r="36" fill="#FDE0C4"/>
+  <circle cx="106" cy="132" r="4.5" fill="#1E1B4B"/>
+  <circle cx="134" cy="132" r="4.5" fill="#1E1B4B"/>
+  <circle cx="107.5" cy="130.5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="135.5" cy="130.5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="96" cy="146" r="6" fill="#F9A8D4" opacity="0.6"/>
+  <circle cx="144" cy="146" r="6" fill="#F9A8D4" opacity="0.6"/>
+  <path d="M111 147 Q120 155 129 147" stroke="#9A3412" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- chapeu -->
+  <ellipse cx="120" cy="100" rx="64" ry="14" fill="#5B21B6"/>
+  <path d="M76 100 Q108 62 140 12 Q142 72 164 100 Z" fill="#6D28D9"/>
+  <path d="M77 96 Q120 112 163 96 L164 103 Q120 120 76 103 Z" fill="#22D3EE"/>
+  <polygon points="120,50 123.5,58 132,59 125.5,64.5 127.5,73 120,68.5 112.5,73 114.5,64.5 108,59 116.5,58" fill="#CFFAFE"/>
+</svg>

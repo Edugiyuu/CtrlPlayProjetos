@@ -1,0 +1,89 @@
+body {
+  background-color: #0F172A;
+  font-family: Arial, sans-serif;
+  text-align: center;             /* etapa 9: centraliza a fileira de cartões */
+}
+
+.titulo {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.ficha {
+  display: inline-block;          /* etapa 9: a caixa passa a ocupar só a largura dela */
+  vertical-align: top;            /* etapa 9: todos alinhados pelo topo */
+  width: 300px;
+  margin: 20px 10px;
+  padding: 24px;
+  background-color: #1E293B;
+  border: 3px solid #22D3EE;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #22D3EE;
+  border-radius: 80px;
+  transition: 0.3s;               /* bônus: a mudança acontece devagar */
+}
+
+.foto:hover {                     /* bônus: quando o mouse está em cima */
+  border-color: #F472B6;
+}
+
+.nome {
+  color: #FFFFFF;
+  font-size: 32px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.nivel {
+  width: 120px;
+  margin: 0 auto 24px auto;
+  padding: 8px;
+  background-color: #22D3EE;
+  color: #1E293B;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nivel:hover {
+  background-color: #F472B6;
+}
+
+.rotulo {
+  color: #F1F5F9;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.barra-fundo {
+  width: 300px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: #475569;
+  border-radius: 10px;
+}
+
+.barra-hp {
+  height: 20px;
+  background-color: #EF4444;
+  border-radius: 10px;
+}
+
+.hp-70  { width: 210px; }         /* 70% de 300px */
+.hp-30  { width: 90px; }          /* 30% de 300px */
+.hp-100 { width: 300px; }         /* 100% de 300px */
+
+.tipo {
+  color: #94A3B8;
+  font-size: 14px;
+  margin-top: 24px;
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="fundo" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#064E3B"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#fundo)"/>
+  <circle cx="34" cy="50" r="2" fill="#FFFFFF"/>
+  <circle cx="64" cy="24" r="1.5" fill="#CFFAFE"/>
+  <circle cx="30" cy="180" r="2" fill="#FFFFFF"/>
+  <!-- arco -->
+  <path d="M200 34 Q238 122 200 212" stroke="#92400E" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <line x1="200" y1="34" x2="200" y2="212" stroke="#E2E8F0" stroke-width="2"/>
+  <!-- manto -->
+  <path d="M50 240 Q56 178 120 170 Q184 178 190 240 Z" fill="#14532D"/>
+  <circle cx="120" cy="186" r="7" fill="#22D3EE"/>
+  <!-- capuz -->
+  <circle cx="120" cy="116" r="54" fill="#166534"/>
+  <!-- rosto -->
+  <circle cx="120" cy="128" r="34" fill="#FDE0C4"/>
+  <path d="M84 120 Q86 84 120 82 Q154 84 156 120 Q140 100 120 100 Q100 100 84 120 Z" fill="#B45309"/>
+  <circle cx="107" cy="130" r="4.5" fill="#1E1B4B"/>
+  <circle cx="133" cy="130" r="4.5" fill="#1E1B4B"/>
+  <circle cx="108.5" cy="128.5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="134.5" cy="128.5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="97" cy="144" r="5" fill="#F9A8D4" opacity="0.6"/>
+  <circle cx="143" cy="144" r="5" fill="#F9A8D4" opacity="0.6"/>
+  <path d="M112 145 Q120 152 128 145" stroke="#9A3412" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- topo do capuz -->
+  <path d="M64 124 Q60 52 120 48 Q180 52 176 124 Q168 88 120 84 Q72 88 64 124 Z" fill="#15803D"/>
+</svg>
