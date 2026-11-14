@@ -143,7 +143,7 @@ A conta do `width`: `HP ÷ 100 × 300` (70 → 210, 30 → 90, 100 → 300). Cad
 (`class="barra-hp hp-30"`): o primeiro dá cor e altura, o segundo dá a largura. Explique só
 isso: "dois apelidos na mesma tag, separados por espaço". É a única regra nova por cartão.
 
-**Etapa 9 (lado a lado).** Os 3 cartões estão empilhados: é a deixa. Mostre a tela 8 do
+**Etapa 9 (lado a lado).** Os 3 cartões estão empilhados: é a deixa. Mostre a tela 6 do
 Figma antes. Três mudanças: `body { text-align: center; }`, e na `.ficha`:
 `display: inline-block;`, `vertical-align: top;` e `margin: 20px 10px;` (no lugar de
 `40px auto`). Explique `inline-block` só como "a caixa ocupa só a largura dela, não a
@@ -155,7 +155,7 @@ Pergunte "por que o `margin: auto` parou de centralizar?". Aí entra o `text-ali
 
 ## Bônus — hover
 
-Só se ele chegou no marco. Mostre a tela 6 do Figma antes: dois estados lado a lado.
+Só se ele chegou no marco. Mostre a tela 7 do Figma antes: dois estados lado a lado.
 Primeiro sem `transition`: a cor troca num estalo. Depois ponha `transition: 0.3s;`.
 Se ele puser o `transition` dentro do `:hover`, a cor muda devagar na ida e **volta de
 estalo** — deixe ele ver e perguntar por quê. Resposta: a regra normal é a que manda na volta.
@@ -193,7 +193,7 @@ gancho: "70% de quê? Da caixa de fora". Não precisa aprofundar hoje.
 
 **"Cartão centralizado só na página branca."** Ele esqueceu o `body` escuro; confira etapa 2.
 
-**O CSS inteiro parou.** Igual à aula 01: falta `;` ou `}` na regra anterior.
+**O CSS inteiro parou.** Igual às aulas anteriores: falta `;` ou `}` na regra anterior.
 
 ---
 

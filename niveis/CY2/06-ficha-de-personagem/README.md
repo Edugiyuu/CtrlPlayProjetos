@@ -1,9 +1,9 @@
-# Ficha de personagem (Time de Heróis) — CY2 · aula 02
+# Ficha de personagem (Time de Heróis) — CY2 · aula 06
 
 `bloco 1h30 · escopo real ~80 min`
 
 **Sai de:** um cartão sem estilo (foto gigante + texto solto) → **chega em:** título + **3 cartões** de personagem lado a lado, cada um com foto redonda, nome, nível e barra de HP
-**Já tem:** o cartão da aula 01, `color`, `background-color`, `padding`, `margin`, `border`, `border-radius`, `<style>` dentro do `<head>` (aula 01) · **Novo hoje:** CSS num **arquivo `.css` separado** (o `<link>` já vem escrito), `class` como "apelido da caixa" (só o ponto + nome), `width`/`height`, `margin: 0 auto`, `text-align`, `font-size` (+ `font-weight` de brinde), `display: inline-block` pros cartões lado a lado · **Bônus:** `:hover` + `transition` · **Fora:** `id`, seletores combinados, flexbox, grid, `position`, porcentagem, responsivo, criar `<img>` do zero
+**Já tem:** o cartão da aula 05, `color`, `background-color`, `padding`, `margin`, `border`, `border-radius`, `<style>` dentro do `<head>` (aulas 01 a 05), `class` como apelido da caixa (aula 02), `:hover` + `transition` (aula 04) · **Novo hoje:** CSS num **arquivo `.css` separado** (o `<link>` já vem escrito), `width`/`height`, `margin: 0 auto`, `text-align`, `font-size` (+ `font-weight` de brinde), `display: inline-block` pros cartões lado a lado · **Bônus (revisão da aula 04):** `:hover` + `transition` · **Fora:** `id`, seletores combinados, flexbox, grid, `position`, porcentagem, responsivo, criar `<img>` do zero
 **Abre com:** "Todo jogo tem uma tela de personagem. O que faz ela parecer de jogo e não uma lista do Word?"
 
 | Min | O quê | Teste na tela |
@@ -18,13 +18,13 @@
 | **✅ 53** | **Primeiro cartão pronto** | foto, nome, nível e HP pintados |
 | 53–58 | O título (`.titulo`): revisão de `text-align` e `font-size` | "Time de Heróis" no meio, grande |
 | 58–72 | **Ctrl+C / Ctrl+V** do cartão 2 vezes; trocar foto, nome, nível, HP e o 2º apelido da barra (`hp-30`, `hp-100`) | **3 cartões prontos, um embaixo do outro; só 1 regra nova por cartão (a largura da barra)** |
-| 72–80 | **Novo:** lado a lado — `.ficha` com `display: inline-block`, `vertical-align: top`, `margin: 20px 10px`; `body` com `text-align: center` (tela 8 do Figma) | os 3 cartões em fileira |
+| 72–80 | **Novo:** lado a lado — `.ficha` com `display: inline-block`, `vertical-align: top`, `margin: 20px 10px`; `body` com `text-align: center` (tela 6 do Figma) | os 3 cartões em fileira |
 | **✅ 80** | **MARCO MÍNIMO — daqui pra baixo é bônus** | título + 3 heróis lado a lado |
-| 80–90 | **Bônus:** `:hover` + `transition` na pílula e na foto (tela 6 do Figma), ou barra de MP | passa o mouse e a pílula fica rosa devagar |
+| 80–90 | **Bônus (revisão da aula 04):** `:hover` + `transition` na pílula e na foto (tela 7 do Figma), ou barra de MP | passa o mouse e a pílula fica rosa devagar |
 
-**Atrasou?** corta o hover e a barra de MP. Faça só **2** cartões, mas nunca corte o copiar/colar: é nele que o aluno vê que **a mesma classe pinta todo mundo** — o que faz um `.css` só pintar todas as páginas na aula 03.
+**Atrasou?** corta o hover e a barra de MP. Faça só **2** cartões, mas nunca corte o copiar/colar: é nele que o aluno vê que **a mesma classe pinta todo mundo** — o que faz um `.css` só pintar todas as páginas na aula 07.
 
-**Referência visual:** o board do Figma (tela 0 do apelido + 4 telas de conceito + o Time de Heróis pronto (5) + lado a lado (8) + hover (6)). Projeta a tela do conceito antes de cada bloco.
+**Referência visual:** o board do Figma (tela 0 do apelido + 4 telas de conceito + o Time de Heróis pronto (5) + lado a lado (6) + hover (7)). Projeta a tela do conceito antes de cada bloco.
 
 | Conceito | Em 1 frase | ✋ Checagem (resposta boa) |
 |---|---|---|

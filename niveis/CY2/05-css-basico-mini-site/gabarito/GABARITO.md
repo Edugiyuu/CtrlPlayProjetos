@@ -104,7 +104,7 @@ cards grudam. Põe de volta. Dois segundos, e o conceito fecha.
 pílula. Aí ele entende que o valor é o raio do canto, não um liga/desliga.
 
 **Etapa 6 (os links).** O aluno copia o `<style>` inteiro pro `sobre.html`. Ele
-vai reclamar. **Deixe reclamar** — é o gancho da aula 02 (CSS externo). Não
+vai reclamar. **Deixe reclamar** — é o gancho da aula 06 (CSS externo). Não
 entregue o `.css` separado hoje.
 
 A classe `ativo` muda de página pra página: em `sobre.html`, quem tem

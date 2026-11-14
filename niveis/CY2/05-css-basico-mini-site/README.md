@@ -1,9 +1,9 @@
-# CSS básico num mini-site — CY2 · aula 01
+# CSS básico num mini-site — CY2 · aula 05
 
 `bloco 1h30 · escopo real ~65 min`
 
 **Sai de:** página branca de texto preto → **chega em:** 2 páginas pintadas que linkam uma na outra
-**Já tem:** HTML de tags (`h1`, `p`, `div`), abrir arquivo no navegador · **Novo hoje:** `color`/`background-color`, `padding`, `margin`, `border`/`border-radius`, `<a href>` entre arquivos · **Fora:** flexbox, grid, `position`, CSS externo (`.css` separado), responsivo
+**Já tem (aulas 01 a 04):** tags, a regra do CSS, `color`/`background-color`, `padding`, `class` (até dois apelidos), `margin`, `border`/`border-radius`, `:hover` + `transition` (voltam hoje como revisão) · **Novo hoje:** mais de uma página, `<a href>` entre arquivos · **Fora:** flexbox, grid, `position`, CSS externo (`.css` separado), responsivo
 **Abre com:** "Essa página tem o mesmo conteúdo de um site de verdade. Por que ela parece um trabalho de escola?"
 
 | Min | O quê | Teste na tela |
@@ -39,7 +39,7 @@
 | a cor não pega | escreveu `colour`, ou esqueceu o `#` do hex |
 | `padding` não fez nada | aplicou num `<span>`/`<a>` solto, não na caixa |
 | clicou no menu e deu "arquivo não encontrado" | nome do arquivo diferente do `href` (maiúscula conta) ou salvou em outra pasta |
-| as 3 páginas ficaram com visual diferente | ele reescreveu o `<style>` em vez de copiar — é o gancho pro CSS externo da aula 02 |
+| as 3 páginas ficaram com visual diferente | ele reescreveu o `<style>` em vez de copiar — é o gancho pro CSS externo da aula 06 |
 
 **Antes:** a pasta `site/` com os 3 HTML sem CSS no PC do aluno, board do Figma aberto no projetor
 Aluno: [DESAFIO.md](./DESAFIO.md) · Respostas: [gabarito/](./gabarito/)
