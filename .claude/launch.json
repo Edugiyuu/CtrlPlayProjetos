@@ -21,6 +21,13 @@
       "runtimeArgs": ["run", "dev"],
       "port": 5173,
       "cwd": "niveis/CY3/02-calculadora-react-vite/gabarito/calculadora"
+    },
+    {
+      "name": "cy2-pedra-papel-tesoura",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8765"],
+      "port": 8765,
+      "cwd": "niveis/CY2/08-pedra-papel-tesoura/gabarito"
     }
   ]
 }

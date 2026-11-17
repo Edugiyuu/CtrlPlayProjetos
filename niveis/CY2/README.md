@@ -11,3 +11,4 @@ Minhas aulas para este nível, na ordem. Uma pasta por aula: `NN-nome-da-aula/`.
 | 05 | CSS básico num mini-site de 3 páginas | prática | [05-css-basico-mini-site](05-css-basico-mini-site/) |
 | 06 | Ficha de personagem (width, centralizar, barra de HP) | prática | [06-ficha-de-personagem](06-ficha-de-personagem/) |
 | 07 | Publicar o site no GitHub (GitHub Pages) | prática | [07-publicar-site-github-pages](07-publicar-site-github-pages/) |
+| 08 | Pedra, Papel e Tesoura (primeiro JavaScript: onclick, id, Math.random, if) | prática | [08-pedra-papel-tesoura](08-pedra-papel-tesoura/) |
