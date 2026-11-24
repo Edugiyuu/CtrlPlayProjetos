@@ -1,5 +1,9 @@
-// Versão com o desafio (emoji da classe + força + 5º nome).
-// Pra usar: no index.html, troque script.js por script-desafio.js.
+// Versão com o desafio (emoji da classe + card de força + 5º nome + frase).
+// Pra usar: no index.html, troque script.js por script-desafio.js e acrescente,
+// junto dos outros cards:
+//   <div class="card amarelo"><p class="titulo">💪 Força</p><h2 id="caixaForca">?</h2></div>
+// e embaixo do botão:
+//   <h2 id="frase"></h2>
 
 function gerar() {
   let nomes = ["Kira", "Brann", "Lyra", "Tobi", "Zuri"];   // desafio 3: 5 nomes
@@ -14,7 +18,12 @@ function gerar() {
   let arma = armas[Math.floor(Math.random() * 4)];
   let forca = Math.floor(Math.random() * 100) + 1;         // desafio 2: 1 a 100
 
-  document.getElementById("heroi").innerText =
-    nome + " é " + classe + " e usa " + arma + ". Força: " + forca;
+  document.getElementById("caixaNome").innerText = nome;
+  document.getElementById("caixaClasse").innerText = classe;
+  document.getElementById("caixaArma").innerText = arma;
+  document.getElementById("caixaForca").innerText = forca;
   document.getElementById("emoji").innerText = emoji;
+
+  // Bônus: a frase juntando tudo com +
+  document.getElementById("frase").innerText = nome + " é " + classe + " e usa " + arma + "!";
 }

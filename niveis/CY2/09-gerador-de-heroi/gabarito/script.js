@@ -9,7 +9,8 @@ function gerar() {
   let classe = classes[Math.floor(Math.random() * 4)];
   let arma = armas[Math.floor(Math.random() * 4)];
 
-  // 3. Junta tudo numa frase com +
-  document.getElementById("heroi").innerText = nome + " é " + classe + " e usa " + arma;
-  document.getElementById("emoji").innerText = "🦸";
+  // 3. Cada um no seu card
+  document.getElementById("caixaNome").innerText = nome;
+  document.getElementById("caixaClasse").innerText = classe;
+  document.getElementById("caixaArma").innerText = arma;
 }

@@ -12,5 +12,5 @@ Minhas aulas para este nível, na ordem. Uma pasta por aula: `NN-nome-da-aula/`.
 | 06 | Ficha de personagem (width, centralizar, barra de HP) | prática | [06-ficha-de-personagem](06-ficha-de-personagem/) |
 | 07 | Publicar o site no GitHub (GitHub Pages) | prática | [07-publicar-site-github-pages](07-publicar-site-github-pages/) |
 | 08 | Pedra, Papel e Tesoura (primeiro JavaScript: onclick, id, Math.random, if) | prática | [08-pedra-papel-tesoura](08-pedra-papel-tesoura/) |
-| 09 | Gerador de Herói (listas, sorteio em 3 listas, juntar texto com +) | prática | [09-gerador-de-heroi](09-gerador-de-heroi/) |
+| 09 | Gerador de Herói (listas, sorteio em 3 listas, um card pra cada) | prática | [09-gerador-de-heroi](09-gerador-de-heroi/) |
 | 10 | Bichinho Virtual (variáveis fora da função, .style.width, if com <) | prática | [10-bichinho-virtual](10-bichinho-virtual/) |
