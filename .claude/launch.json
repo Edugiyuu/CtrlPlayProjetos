@@ -28,6 +28,13 @@
       "runtimeArgs": ["-m", "http.server", "8765"],
       "port": 8765,
       "cwd": "niveis/CY2/08-pedra-papel-tesoura/gabarito"
+    },
+    {
+      "name": "cy2-aulas",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8766"],
+      "port": 8766,
+      "cwd": "niveis/CY2"
     }
   ]
 }
