@@ -10,3 +10,4 @@ Projetos em Scratch. Cada pasta tem o `.sb3` — abrir em scratch.mit.edu → **
 | Pega-Fruta | Maçã cai do céu, a cesta segue o mouse e pega | adicione a y, posição x do mouse, se tocando em, variável | [pega-fruta/](pega-fruta/) |
 | Labirinto | Bola anda com as setas; encostou na parede preta volta pro começo; 3 frutas no caminho dão ponto e somem | tecla pressionada, mova, tocando na cor, diga | [labirinto/](labirinto/) |
 | Escape do Coelho | Pega a cenoura, responde a pergunta da porta e muda de cenário | pergunte e espere, resposta, se/senão, transmita mensagem, troque o cenário | [escape-do-coelho/](escape-do-coelho/) |
+| Sapo Pula-Tronco | Sapo pula com espaço (sobe e desce), tronco vem rolando da direita; cada tronco pulado dá ponto, encostou acabou o jogo | tecla pressionada?, repita N vezes, adicione a y/x, posição x, pare tudo | [sapo-pula-tronco/](sapo-pula-tronco/) |
