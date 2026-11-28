@@ -39,4 +39,4 @@
 
 **Jogo pronto:** [Pet-Perdido.zip](Pet-Perdido.zip) — `File > Import project...`. Pipoca começa no meio, Gato embaixo à esquerda dá a dica, Dono lá no fundo à direita. Anda com **WASD**, Enter fala.
 
-**Antes:** fazer uma vez seguindo [gabarito/GUIA-COMPLETO.md](gabarito/GUIA-COMPLETO.md) (~25 min) · Aluno: [DESAFIO.md](DESAFIO.md) · Sprite exemplo: [gabarito/pipoca.png](gabarito/pipoca.png)
+**Antes:** fazer uma vez seguindo [gabarito/GUIA-COMPLETO.md](gabarito/GUIA-COMPLETO.md) (~25 min, com foto de cada clique) · Aluno: [DESAFIO.md](DESAFIO.md) · Sprite exemplo: [gabarito/pipoca.png](gabarito/pipoca.png)
